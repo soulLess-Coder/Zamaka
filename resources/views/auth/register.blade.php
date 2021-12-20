@@ -17,10 +17,20 @@
                     @enderror
                 </div>
                 <div class="mb-4">
-                    <label for="username" class="sr-only">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Your username" class="bg-gray-100 border-2 w-full p-4 rounded-lg @error('username') border-red-500 @enderror" value="{{ old('username') }}">
+                    <label for="cnic_number" class="sr-only">Cnic Number</label>
+                    <input type="text" name="cnic_number" id="cnic_number" placeholder="Your cnic number" class="bg-gray-100 border-2 w-full p-4 rounded-lg @error('cnic_number') border-red-500 @enderror">
 
-                    @error('username')
+                    @error('cnic_number')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                <div class="mb-4">
+                    <label for="phone_number" class="sr-only">Phone Number</label>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Your phone number" class="bg-gray-100 border-2 w-full p-4 rounded-lg @error('phone_number') border-red-500 @enderror" value="{{ old('phone_number') }}">
+
+                    @error('phone_number')
                         <div class="text-red-500 mt-2 text-sm">
                             {{ $message }}
                         </div>
