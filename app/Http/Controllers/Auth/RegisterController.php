@@ -29,10 +29,10 @@ class RegisterController extends Controller
             'name' => $request->name,
             'email'=> $request->email,
             'password' => Hash::make($request->password),
-            'cnic_number' => $request->cnic_number,
-            'phone_number' => $request->phone_number,
+            'cnic_number' => Hash::make($request->cnic_number),
+            'phone_number' => Hash::make($request->phone_number),
         ]);
-
+        return redirect()->route('dashboard');
     }
 
     //sign user in
