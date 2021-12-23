@@ -27,11 +27,58 @@ Route::get('/tenant', function () {
     return view('tenant.index');
 });
 
+/* ***Mahad's Routes*** */
 
 Route::get('/admin', function () {
     return view('admin.add-listing');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***Usman's Routes*** */
+
 Route::get('/auth', function () {
     return view('auth.login');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***Salman's Routes*** */
