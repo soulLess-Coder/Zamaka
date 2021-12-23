@@ -18,5 +18,7 @@
         <li><a href="" class="p-3 pr-0">Login |</a></li>
         <li><a href="{{ route('register') }}" class="p-1">Register </a></li>
     </ul>
+
 </nav>
+
 
