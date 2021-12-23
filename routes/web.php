@@ -82,3 +82,5 @@ Route::get('/auth', function () {
 
 
 /* ***Salman's Routes*** */
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::post('/register', [RegisterController::class, 'store']);
