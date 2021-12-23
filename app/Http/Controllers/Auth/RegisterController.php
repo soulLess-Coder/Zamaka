@@ -32,7 +32,7 @@ class RegisterController extends Controller
             'cnic_number' => Hash::make($request->cnic_number),
             'phone_number' => Hash::make($request->phone_number),
         ]);
-        return redirect()->route('userprofile');
+        return redirect()->route('dashboard');
     }
 
     //sign user in

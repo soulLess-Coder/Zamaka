@@ -6,7 +6,6 @@
            Registration Form
            <form action="{{ route('register') }}" method="post">
                 @csrf
-
                 <div class="mb-4">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your name" class="bg-gray-100 border-2 w-full p-4 rounded-full  @error('name') border-red-500 @enderror" value="{{ old('name') }}">
