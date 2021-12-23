@@ -26,3 +26,7 @@ Route::get('/auth', function () {
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
+
+Route::get('/admin', function () {
+    return view('admin.add-listing');
+});
