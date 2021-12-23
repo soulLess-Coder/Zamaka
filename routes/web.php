@@ -21,11 +21,11 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/auth', function () {
     return view('register.index');
-    
+
 });
 
 
 Route::get('/', function () {
     return view('listing');
-    
+
 });

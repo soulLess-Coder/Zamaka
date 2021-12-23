@@ -1,5 +1,6 @@
 <nav class="p-6 bg-white flex justify-between mb-6">
     <ul class="flex items-center">
+
         <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Home </a></li>
         <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Book Appointment </a></li>
         <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">Ticket </a></li>
@@ -11,7 +12,7 @@
     <ul class="flex items-center">
         <li><a href="" class="p-3 pr-0">Salman |</a></li>
         <li><a href="" class=" p-4 rounded-lg p-1">Logout </a></li>
-        <div class="h-12 w-12 rounded-full flex items-center border-gray-200 border"> 
+        <div class="h-12 w-12 rounded-full flex items-center border-gray-200 border">
             <img src="./images/person.png">
         </div>
 
