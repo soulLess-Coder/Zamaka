@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Zamaka</title>
 </head>
-<body class="bg-gray-200">
+<body>
     <x-header/>
     @yield('content')
 </body>
