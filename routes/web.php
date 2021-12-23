@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -54,9 +55,7 @@ Route::get('/admin', function () {
 
 /* ***Usman's Routes*** */
 
-Route::get('/auth', function () {
-    return view('auth.login');
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 
 
