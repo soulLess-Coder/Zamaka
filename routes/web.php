@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -82,4 +83,3 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 /* ***Salman's Routes*** */
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::post('/register', [RegisterController::class, 'store']);
