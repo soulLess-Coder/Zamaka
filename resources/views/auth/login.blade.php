@@ -4,9 +4,9 @@
 <div class="px-5">
 <form class="grid grid-cols-1 bg-white sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
     <div class="hidden lg:block">
-        <div class="justify-center flex pl-10"><a class="mx-auto"><img src="./images/lock.png" /></a></div>
+        <div class="justify-center flex pl-5 pt-5 pb-5 bg-gradient-to-bl from-purple-500 to-pink-500 "><a class="mx-auto"><img src="./images/lock.png" /></a></div>
     </div>
-    <div class="text-center sm:text-left">
+    <div class="text-center sm:text-left bg-gradient-to-r from-purple-500 to-pink-500 ">
       <div class="flex justify-center">
         <div class="rounded-lg">
           <p class="text-center text-2xl"><b>Sign In</b></p>
