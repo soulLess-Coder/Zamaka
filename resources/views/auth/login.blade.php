@@ -2,7 +2,8 @@
 
 @section('content')
 <div class="px-5">
-<form class="grid grid-cols-1 bg-white sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+<form action="{{ route('login') }}" method="post" class="grid grid-cols-1 bg-white sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+    @csrf
     <div class="hidden lg:block">
         <div class="justify-center flex pl-5 pt-5 pb-5 bg-gradient-to-bl from-purple-500 to-pink-500 "><a class="mx-auto"><img src="./images/lock.png" /></a></div>
     </div>

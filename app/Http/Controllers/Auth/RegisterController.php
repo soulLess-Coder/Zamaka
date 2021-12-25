@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -32,9 +33,13 @@ class RegisterController extends Controller
             'cnic_number' => Hash::make($request->cnic_number),
             'phone_number' => Hash::make($request->phone_number),
         ]);
+
+        //sign user in
+        Auth::attempt($request->only('email', 'password'));
+
         return redirect()->route('dashboard');
     }
 
-    //sign user in
+
     //redirect
 }
