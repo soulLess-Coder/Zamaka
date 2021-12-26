@@ -4,11 +4,11 @@
 
 
 
-<form class="place-items-center  min-h-screen grid grid-cols-1 xl:grid-cols-3">
+<form class="bg-grey-200 place-items-center  min-h-screen grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
     <!-- ... -->
 
-        <div class=" py-8 xl:col-span-2 text-center font-bold text-3xl ">
-            <h1> Add Appartment</h1>
+        <div class=" py-8  lg:col-span-2 xl:col-span-2  text-center font-bold text-3xl">
+            <h1> Add Appartments</h1>
         </div>
     <div class="mb-4">
         <p class="font-bold p-2"> House no</p>
@@ -65,7 +65,7 @@
     </div>
 
 
-    <div class="mb-4">
+    <div class="mb-4 lg:col-span-2 xl:col-span-2" >
         <p class="font-bold p-2"> Address</Address></p>
 
         <input name="Address" id="Street" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
@@ -80,10 +80,8 @@
 
 
 
-    <div class="mb-4" >
-            <p class =" font-bold p-2" >Basic Necessity
-
-            </p>
+    <div class="mb-4 lg:col-span-2">
+            <p class ="font-bold p-2" >Basic Necessity</p>
             <div class="inline-block pl-4 pr-4">
                 <input class="" type="checkbox" >
                 <label>Electricity</label>
@@ -109,14 +107,14 @@
 
 
 
-                <div class="text-center font-bold text-3xl">
+                <div class="p-6 text-center font-bold text-3xl">
                     <h1> More Details</h1>
                 </div>
 
     </div>
 {{-- adjust grid here for more details --}}
 
-    <div>
+
         <div class="mb-4">
             <p class="font-bold p-2"> House Area</Address></p>
 
@@ -158,8 +156,8 @@
         <div class="mb-4">
             <p class="font-bold p-2"> Year Build</Address></p>
 
-            <input name="Bath Rooom" id="Bathroom" placeholder="Year Build" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
-            @error('Address') border-red-500 @enderror" value="{{ old('Bath Room') }}">
+            <input name="Year Build" id="Year Build" placeholder="Year Build" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            @error('yearbuild') border-red-500 @enderror" value="{{ old('Year Build') }}">
 
             @error('Year Build')
                 <div class="text-red-500 mt-2 text-sm">
@@ -168,21 +166,31 @@
             @enderror
         </div>
 
-        <div class="mb-4">
-            <p class="font-bold p-2"> Price </Address></p>
+            <div class="mb-4 lg:col-span-2">
 
-            <input name="Bath Rooom" id="Bathroom" placeholder="Bath room" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
-            @error('Address') border-red-500 @enderror" value="{{ old('Bath Room') }}">
+                <span class="inline-grid "><p class="font-bold p-2"> Price </Address></p></span>
 
-            @error('Bath Room')
-                <div class="text-red-500 mt-2 text-sm">
-                    {{ $message }}
-                </div>
-            @enderror
-        </div>
+                <span class="inline-grid " ><input name="Price" id="Price" placeholder="Price" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+                         @error('Price') border-red-500 @enderror" value="{{ old('Price') }}">
 
-    </div>
+                        @error('Bath Room')
+                        <div class="text-red-500 mt-2 text-sm">
+                         {{ $message }}
+                        </div>
+                        @enderror
+                    </span>
 
+            </div>
+
+            <div class="mb-4 h-32 w-32 p-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  Username
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+              </div>
+
+
+{{--  --}}
 
 
 
