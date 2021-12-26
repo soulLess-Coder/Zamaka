@@ -35,6 +35,9 @@ Route::get('/admin', function () {
     return view('admin.add-listing');
 });
 
+Route::get('/tenant', function () {
+    return view('tenant.payment');
+});
 
 
 
