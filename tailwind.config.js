@@ -4,7 +4,12 @@ module.exports = {
         "./resources//.js",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'sen': ['Sen-Bold', 'Sen-ExtraBold', 'Sen-Regular'],
+                'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+            }
+        },
     },
     plugins: [],
 }

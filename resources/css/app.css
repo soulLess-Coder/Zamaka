@@ -2,4 +2,9 @@
 
 @tailwind components;
 
+@font-face {
+    font-family: 'sen';
+    src: local('sen'), url(../../public/fonts/Sen-Regular.ttf) format('ttf');
+}
+
 @tailwind utilities;
