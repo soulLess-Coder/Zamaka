@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ComparisionController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
@@ -21,9 +21,6 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/tenant', [UserProfileController::class, 'index'])->name('userprofile');
 
-Route::get('/auth', function () {
-    return view('register.index');
-});
 
 Route::get('/tenant', function () {
     return view('tenant.index');
@@ -56,12 +53,12 @@ Route::get('/tenant', function () {
 
 
 
-
 /* ***Usman's Routes*** */
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
+Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
 
 
 
