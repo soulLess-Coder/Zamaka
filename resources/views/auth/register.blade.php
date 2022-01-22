@@ -1,72 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex justify-center">
-        <div class="w-6/12 bg-white p-6 rounded-lg">
-           Registration Form
-           <form action="{{ route('register') }}" method="post">
-                @csrf
-                <div class="mb-4">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" class="bg-gray-100 border-2 w-full p-4 rounded-full  @error('name') border-red-500 @enderror" value="{{ old('name') }}">
-                    @error('name')
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-                <div class="mb-4">
-                    <label for="cnic_number" class="sr-only">Cnic Number</label>
-                    <input type="text" name="cnic_number" id="cnic_number" placeholder="Your cnic number" class="bg-gray-100 border-2 w-full p-4 rounded-full @error('cnic_number') border-red-500 @enderror">
+<div class="sm:flex justify-center items-center sm:h-screen">
+    <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
+      <div class="sm:col-span-2 flex justify-center">
+        <h1 class="text-5xl leading-loose text-gray-500 flex pt-16">Sign Up</h1>
+        <br>
+      </div>
+      <div class="row-span-6 sm:bg-white w-auto h-72">
+        <img src="./images/lock1.png" />
+      </div>
 
-                    @error('cnic_number')
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-                <div class="mb-4">
-                    <label for="phone_number" class="sr-only">Phone Number</label>
-                    <input type="text" name="phone_number" id="phone_number" placeholder="Your phone number" class="bg-gray-100 border-2 w-full p-4 rounded-full @error('phone_number') border-red-500 @enderror" value="{{ old('phone_number') }}">
+      <div class="w-full bg-gray-200 rounded-full text-center font-bold ">
+        0%
+      </div>
+      <div class="lg: pt-6 ">
+        <label class=" order-4 sm:flex justify-center font-bold ">Full Name</label>
+        <input type="text" id="Street" placeholder="@" class="w-full h-1 p-4 mt-2 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+      </div>
 
-                    @error('phone_number')
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" class="bg-gray-100 border-2 w-full p-4 rounded-full @error('email') border-red-500 @enderror" value="{{ old('email') }}">
-                    @error('email')
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-                <div class="mb-4">
-                    <label for="password" class="sr-only">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Your password" class="bg-gray-100 border-2 w-full h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="">
+      <div class="lg: pt-6">
+        <label class="sm:flex justify-center font-bold pt-4 ">Phone No</label>
+        <input type="text" id="Street" placeholder="@" class="flex justify-center w-full h-1 p-4 mt-2 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+      </div>
+      <div class="lg: pt-6">
+        <label class="sm:flex justify-center font-bold pt-4 ">CNIC</label>
+        <input type="text" id="Street" placeholder="@" class="flex justify-center w-full h-1 p-4 mt-2 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+      </div>
+      <div class="inline-block pl-4 pr-4 pt-5">
+                <input class="" type="checkbox" checked >
+                <label>By clicking this I Agree term and condition</label>
+      </div>
+        <div class=" w-3/4 h-10 shadow-xl m-10">
+        <x-inputs.button type="submit" class=" mx-auto" buttonText="Login" />
+        <p>Already have an account? <a href="login.blade.php" class=" text-blue-600">Login</a></p>
+      </div>
 
-                    @error('password')
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-                <div class="mb-4">
-                    <label for="password_confirmation" class="sr-only">Repeat Password</label>
-                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm Your password" class="bg-gray-100 border-2 w-full p-4 rounded-full @error('password_confirmation') border-red-500 @enderror" value="">
-
-                    @error('password_confirmation')
-                    <div class="text-red-500 mt-2 text-sm">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-
-                <x-inputs.button type="submit" buttonText="Next"/>
-            </form>
-        </div>
     </div>
+</div>
+
 @endsection
