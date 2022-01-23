@@ -10,30 +10,28 @@
       </div>
       <div>
         <label class="justify-center p-2  sm:flex">Name</label>
-        <input <input type="text" id="Street" placeholder="Raja Muhammad Mahad" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+        <input type="text" id="Street" placeholder="Raja Muhammad Mahad" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
       </div>
 
        <div>
         <label class="justify-center p-2  sm:flex">Address</label>
-        <input <input type="text" id="Street" placeholder="h#11, St#4,Chamanabad dhoke Sydean Rawalpindi" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" >
+        <input type="text" id="Street" placeholder="h#11, St#4,Chamanabad dhoke Sydean Rawalpindi" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100">
       </div>
 
        <div>
         <label class="justify-center p-2  sm:flex">Number</label>
-        <input <input type="number" id="Street" placeholder="03xx-xxxxxxx" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+        <input type="number" id="Street" placeholder="03xx-xxxxxxx" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
       </div>
 
        <div>
         <label class="justify-center p-2  sm:flex">Details</label>
-        <input <input type="text" id="Street" placeholder="" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
+        <input type="text" id="Street" placeholder="" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 shadow-lg resize  r hover:translate-x-1 hover:border-gray-100" />
       </div>
 
       <div>
-
-        <button class="resize-y  rounded-full w-16 h-10 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-60 hover:bg-indigo-500 duration-300 ..."> Save</button>
+        <x-inputs.button type="submit" class="mx-auto " buttonText="Next" />
       </div>
 
     </div>
   </div>
-
 @endsection

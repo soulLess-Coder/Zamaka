@@ -32,7 +32,7 @@
                 <label>By clicking this I Agree term and condition</label>
       </div>
         <div class=" w-3/4 h-10 shadow-xl m-10">
-        <x-inputs.button type="submit" class=" mx-auto" buttonText="Login" />
+        <x-inputs.button type="submit" class=" mx-auto" buttonText="Next" />
         <p>Already have an account? <a href="login.blade.php" class=" text-blue-600">Login</a></p>
       </div>
 
