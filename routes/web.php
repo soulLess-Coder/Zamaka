@@ -58,7 +58,8 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
 
-
+Route::get('/complaints', [ComparisionController::class, 'index'])->name('complaints');
+Route::post('/complaints', [LoginController::class, 'complaints']);
 
 
 

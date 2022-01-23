@@ -171,7 +171,7 @@
                 </div>
                 <div class="inline px-4">
                     <input  type="checkbox" checked >
-                    <labe class="font-bold">Telephone</label>
+                    <label class="font-bold">Telephone</label>
                 </div>
                 <div class="inline px-4">
                         <input  type="checkbox" checked >
@@ -192,5 +192,8 @@
           </div>
         </div>
       </form>
+      <div class="p-4" >
+        <x-inputs.button type="submit" class=" mx-auto" buttonText="Back" />
+      </div>
     </div>
 @endsection
