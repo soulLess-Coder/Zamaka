@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- <<<<<<< HEAD
-<div>
+
+{{-- <div>
 <form action="{{ route('login') }}" method="post" class="grid grid-cols-1 bg-white sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
     @csrf
     <div class="hidden lg:block">
@@ -28,7 +28,7 @@
           <div class="flex justify-center"><a class="mx-auto"><img src="./images/googleicon.png" /></a></div>
           <p class="text-center">Don't have an account? <a href="register.blade.php" class="text-blue-600 ">Register</a></p>
         </div> --}}
-=======
+
 <div class="items-center justify-center sm:flex sm:h-screen">
     <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
       <div class="flex justify-center sm:col-span-2">
@@ -38,7 +38,7 @@
 
       <div class="w-auto row-span-6 sm:bg-white h-72">
         <img src="./images/lock1.png" />
->>>>>>> a556e8cbf8f5946612ec725ef6fce84b9a7d3fc9
+
       </div>
 
       <div class="">
