@@ -4,11 +4,11 @@
 <div class="sm:flex justify-center items-center sm:h-screen">
     <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
       <div class="sm:col-span-2 flex justify-center">
-        <h1 class="text-5xl leading-loose text-gray-500 flex pt-16">Sign Up</h1>
+        <h1 class="text-5xl leading-loose flex pt-16">Sign Up</h1>
         <br>
       </div>
-      <div class="row-span-6 sm:bg-white w-auto h-72">
-        <img src="./images/lock1.png" />
+      <div class="row-span-6 sm:bg-white w-auto h-72 p-5">
+        <img src="./images/signup.png" />
       </div>
 
       <div class="w-full bg-gray-200 rounded-full text-center font-bold ">

@@ -29,7 +29,7 @@
       <hr />
 
       <div class="justify-center flex p-5"><a class="mx-auto"><img src="./images/googleicon.png" /></a></div>
-
+      <br>
       <p class="text-center">Don't have an account? <a href="register.blade.php" class=" text-blue-600">Register</a></p>
     </div>
 </div>
