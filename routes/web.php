@@ -51,8 +51,6 @@ Route::get('/tenant', function () {
 
 
 
-
-
 /* ***Usman's Routes*** */
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
