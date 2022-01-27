@@ -1,10 +1,10 @@
 
-<nav class="bg-gray-800">
+<nav class="bg-white">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-button">
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-button">
             <!--
               Icon when menu is closed.
 
@@ -29,19 +29,17 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-            <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+            <img class="block lg:hidden h-8 w-auto" src="">
+            <img class="hidden lg:block h-8 w-auto" src="">
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+              <!-- Current: "bg-gray-900 text-white", Default: "text-black hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-red-500 hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Listings</a>
 
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+              <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Book Appointments</a>
+              <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+              <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
             </div>
           </div>
         </div>
@@ -84,8 +82,8 @@
                 </div>
             </div>
         @else
-            <a href="{{ route('register') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Register</a>
-            <a href="{{ route('login') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Login</a>
+            <a href="{{ route('register') }}" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Register</a>
+            <a href="{{ route('login') }}" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Login</a>
         @endif
       </div>
     </div>
@@ -93,14 +91,14 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+        <!-- Current: "bg-gray-900 text-white", Default: "text-black hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-red-500 hover:bg-red-700 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Listings</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="#" class="text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Book Appointment</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#" class="text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+        <a href="#" class="text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
 
       </div>
     </div>
@@ -111,7 +109,7 @@
 
         <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Home </a></li>
         <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Book Appointment </a></li>
-        <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">Ticket </a></li>
+        <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">Ticket</a></li>
         <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">About Us </a></li>
         <li><a href="" class="ml-3 p-3 rounded-full bg-red-600 w-40 px-4 py-2 text-lg text-white transition-colors
             duration-300 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-red-200 focus:ring-4 radius">Listings </a></li>
@@ -124,8 +122,8 @@
             <img src="./images/person.png">
         </div>
 
-        <li><a href="{{ route('login') }}" class="p-3 pr-0">Login |</a></li>
-        <li><a href="{{ route('register') }}" class="p-1">Register </a></li>
+        <li><a href="{{ route('login') }}" class="p-3 pr-0 text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Login |</a></li>
+        <li><a href="{{ route('register') }}" class="p-1 text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Register </a></li>
     </ul>
 
 </nav> --}}
