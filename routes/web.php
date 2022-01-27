@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\ComparisionController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
@@ -51,14 +52,13 @@ Route::get('/tenant', function () {
 
 
 
-/* ***Usman's Routes*** */
+/* *** Usman's Routes *** */
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
-
-Route::get('/complaints', [ComplaintController::class, 'index'])->name('complaints');
+Route::get('/complaints', [ComplaintController::class, 'index'])->name('complaint');
 
 
 

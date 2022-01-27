@@ -39,7 +39,7 @@
 
               <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Book Appointments</a>
               <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-              <a href="#" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <a href="{{ route('complaint') }}" class="text-black hover:bg-red-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
             </div>
           </div>
         </div>
