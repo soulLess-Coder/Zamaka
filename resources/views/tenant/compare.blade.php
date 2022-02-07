@@ -10,11 +10,11 @@
                 <br />
                 <div class="mb-4">
                 <label for="password" class="block font-bold ">Prize</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 border-t-hidden rounded-full @error('password') border-red-500 @enderror" value="" />
               </div>
               <div class="mb-4">
                 <label for="email" class="block font-bold ">Area/Mohalla</label>
-                <input class="bg-gray-100 border-2 w-50 p-4 rounded-full @error('email') border-red-500 @enderror" value="" />
+                <input class="bg-gray-100 border-2 w-50 p-4 rounded-full border-t-none @error('email') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">

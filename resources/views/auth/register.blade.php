@@ -35,7 +35,6 @@
         <x-inputs.button type="submit" class=" mx-auto" buttonText="Next" />
         <p>Already have an account? <a href="login.blade.php" class=" text-blue-600">Login</a></p>
       </div>
-
     </div>
 </div>
 
