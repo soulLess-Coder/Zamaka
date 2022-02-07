@@ -10,8 +10,10 @@
         <title>Zamaka</title>
     </head>
     <body>
+
         <x-header/>
         @yield('content')
+
     </body>
     <script>
         $( "#mobile-button" ).click(function() {
