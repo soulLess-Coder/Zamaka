@@ -5,10 +5,13 @@
     <form action="{{ route('login') }}" method="post" class="grid grid-cols-1 bg-white sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div class="p-5">
               <div class="flex justify-center">
-                <div class="rounded-lg">
+                <div >
                   <p class="text-2xl text-center"><b>Property 1</b></p>
                 <br />
                 <div class="mb-4">
+                    <div class="row-span-6 sm:bg-white w-auto h-25 p-5 ">
+                        <img src="./images/house.png" />
+                    </div>
                 <label for="password" class="block font-bold ">Prize</label>
                 <input  class="bg-gray-100 border-2 w-50 h-14 p-4 border-t-hidden rounded-full @error('password') border-red-500 @enderror" value="" />
               </div>
@@ -19,17 +22,17 @@
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">Street</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold">Addrees</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">City</label>
-                <input class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4 lg:col-span-2">
@@ -38,18 +41,22 @@
                     <input class="" type="checkbox" checked >
                     <label class="font-bold">Electricity</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked>
                     <label class="font-bold">Gas</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked >
                     <label class="font-bold">Telephone</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked >
                         <label class="font-bold">Internet</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked>
                         <label class="font-bold">Water Supply</label>
@@ -57,14 +64,33 @@
               </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold ">BedRooms</label>
-                <input class="bg-gray-100 border-2 w-70 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <label for="password" class="block font-bold ">Bedrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Washrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">HouseArea</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">LandMarks</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Year Build</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
             </div>
           </div>
         </div>
-
-
 
        <div class="p-5">
               <div class="flex justify-center">
@@ -72,27 +98,30 @@
                   <p class="text-2xl text-center"><b>Property 2</b></p>
                 <br />
                 <div class="mb-4">
+                    <div class="row-span-6 sm:bg-white w-auto h-25 p-5 ">
+                        <img src="./images/house.png" />
+                    </div>
                 <label for="password" class="block font-bold ">Prize</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
               <div class="mb-4">
                 <label for="email" class="block font-bold ">Area/Mohalla</label>
-                <input class="bg-gray-100 border-2 w-50 p-4 rounded-full @error('email') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">Street</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold">Addrees</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">City</label>
-                <input class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4 lg:col-span-2">
@@ -101,27 +130,51 @@
                     <input class="" type="checkbox" checked >
                     <label class="font-bold">Electricity</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked>
                     <label class="font-bold">Gas</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked >
                     <label class="font-bold">Telephone</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked >
                         <label class="font-bold">Internet</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked>
                         <label class="font-bold">Water Supply</label>
                 </div>
-                </div>
+              </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold ">BedRooms</label>
-                <input class="bg-gray-100 border-2 w-70 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <label for="password" class="block font-bold ">Bedrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Washrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">HouseArea</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">LandMarks</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Year Build</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
             </div>
@@ -136,27 +189,30 @@
                   <p class="text-2xl text-center"><b>Property 3</b></p>
                 <br />
                 <div class="mb-4">
+                    <div class="row-span-6 sm:bg-white w-auto h-25 p-5 ">
+                        <img src="./images/house.png" />
+                    </div>
                 <label for="password" class="block font-bold ">Prize</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" >
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
               <div class="mb-4">
                 <label for="email" class="block font-bold ">Area/Mohalla</label>
-                <input class="bg-gray-100 border-2 w-50 p-4 rounded-full @error('email') border-red-500 @enderror"  >
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">Street</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" >
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold">Addrees</label>
-                <input  class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" >
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4">
                 <label for="password" class="block font-bold ">City</label>
-                <input class="bg-gray-100 border-2 w-50 h-14 p-4 rounded-full @error('password') border-red-500 @enderror"  >
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
               <div class="mb-4 lg:col-span-2">
@@ -165,27 +221,51 @@
                     <input class="" type="checkbox" checked >
                     <label class="font-bold">Electricity</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked>
                     <label class="font-bold">Gas</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                     <input  type="checkbox" checked >
                     <label class="font-bold">Telephone</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked >
                         <label class="font-bold">Internet</label>
                 </div>
+                <br>
                 <div class="inline px-4">
                         <input  type="checkbox" checked>
                         <label class="font-bold">Water Supply</label>
                 </div>
-                </div>
+              </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold ">BedRooms</label>
-                <input class="bg-gray-100 border-2 w-70 h-14 p-4 rounded-full @error('password') border-red-500 @enderror" value="" />
+                <label for="password" class="block font-bold ">Bedrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Washrooms</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">HouseArea</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">LandMarks</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="block font-bold ">Year Build</label>
+                <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
             </div>
