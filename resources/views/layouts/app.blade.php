@@ -10,14 +10,14 @@
         <title>Zamaka</title>
     </head>
     <body>
-        <x-header/>
 
+        <x-header/>
         @yield('content')
+
     </body>
     <script>
         $( "#mobile-button" ).click(function() {
             $( "#mobile-menu" ).toggle();
     });
-
     </script>
 </html>
