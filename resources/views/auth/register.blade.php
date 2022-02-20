@@ -4,6 +4,13 @@
 
 <div class="items-center justify-center sm:flex sm:h-screen">
 
+    <ul class="steps">
+        <li class="step step-primary">Register</li>
+        <li class="step step-primary">Choose plan</li>
+        <li class="step">Purchase</li>
+        <li class="step">Receive Product</li>
+    </ul>
+
     <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
       <div class="flex justify-center sm:col-span-2">
         <h1 class="flex pt-16 text-5xl leading-loose">Sign Up</h1>

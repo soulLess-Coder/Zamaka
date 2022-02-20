@@ -1,8 +1,8 @@
 <div class="pt-2 relative mx-auto text-gray-600 mr-8">
     <input class="border-2 bg-white h-10 px-5 pr-16 rounded-lg text-sm xl:transition-all xl:duration-300 xl:focus:w-44
-    lg:h-10 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-red-700 dark:focus:border-teal-500
+    lg:h-10 focus:border-red-700 dark:focus:border-teal-500
      focus:ring focus:ring-primary dark:placeholder-gray-400 focus:ring-opacity-40 focus:outline-none"
-      type="search" name="search" placeholder="Search">
+      type="search" name="search" placeholder="Search"/>
     <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
       <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"

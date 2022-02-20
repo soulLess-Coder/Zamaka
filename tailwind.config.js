@@ -1,7 +1,7 @@
 module.exports = {
     content: [
-        "./resources//*.blade.php",
-        "./resources//.js",
+        "./resources/**/*.blade.php",
+        "./resources/**/.js",
     ],
     theme: {
         extend: {
@@ -12,6 +12,5 @@ module.exports = {
         },
     },
     plugins: [
-        require('daisyui'),
-    ],
+        require("daisyui")],
 }
