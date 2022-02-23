@@ -9,7 +9,7 @@
         <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
         <title>Zamaka</title>
     </head>
-    <body>
+    <body class="bg-neutral-300">
 
         <x-header/>
         @yield('content')

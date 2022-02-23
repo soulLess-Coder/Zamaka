@@ -25,7 +25,7 @@
 
       <div class="pt-6 ml-6">
         <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
-        <input type="text" id="Street" placeholder="@" class="flex justify-center w-3/5 h-3 p-4 mt-2 transform bg-gray-200 border-2 rounded-xl shadow-lg hover:translate-x-1 hover:border-gray-100" />
+        <input type="text" id="Street" placeholder="03xx-xxxx-xxx" class="flex justify-center w-3/5 h-3 p-4 mt-2 transform bg-gray-200 border-2 rounded-xl shadow-lg hover:translate-x-1 hover:border-gray-100" />
       </div>
       <div class="pt-6">
         <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
@@ -36,7 +36,7 @@
                 <label>By clicking this I Agree term and condition</label>
       </div>
 
-        <div class="w-3/4 h-10 m-10 shadow-xl ">
+        <div class="w-3/4 h-10 m-10">
         <x-inputs.button type="submit" class="mx-auto " buttonText="Next" />
         <p>Already have an account? <a href="login.blade.php" class="text-blue-600 ">Login</a></p>
       </div>

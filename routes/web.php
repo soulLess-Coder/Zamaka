@@ -45,7 +45,9 @@ Route::get('/details', function () {
     return view('tenant.listing-details');
 });
 
-
+Route::get('/adminDashboard', function () {
+    return view('admin.admin-dashboard');
+});
 
 
 

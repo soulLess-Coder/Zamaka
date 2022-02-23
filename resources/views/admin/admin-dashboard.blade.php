@@ -2,6 +2,7 @@
 
 @section('content')
 
-    <x-admin-sidebar/>
-
+<h1>
+    ADMIN DASHBOARD
+</h1>
 @endsection
