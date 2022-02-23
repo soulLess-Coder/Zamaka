@@ -31,8 +31,6 @@
     <div class="flex justify-center md:justify-center flex-wrap">
       <h3>Already have an Account? <u class="text-blue-600">Login</u></h3>
     </div>
-  </div>
-
-
+</div>
 
 @endsection
