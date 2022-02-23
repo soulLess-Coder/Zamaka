@@ -29,7 +29,8 @@
         </div>
 
         <div class="justify-self-start sm:flex sm:flex-row gap-x-10 items-center"> <!--Logo-->
-            <img class="w-14 h-16 sm:w-20 sm:h-24" src={{asset('images/logo.svg')}} alt="logo">
+            {{-- <img class="w-14 h-16 sm:w-20 sm:h-24" src={{asset('images/logo.svg')}} alt="logo"> --}}
+            <h1 class="text-xl mr-4 text-bold">Zamaka</h1>
         </div>
 
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
