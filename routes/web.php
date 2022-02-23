@@ -4,6 +4,8 @@ use App\Http\Controllers\ComparisionController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ListingController;
+use App\Http\Controllers\UserProfileController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/tenant', [UserProfileController::class, 'index'])->name('userprofile');
+Route::get('/profile', [UserProfileController::class, 'index'])->name('userprofile');
 
 
 Route::get('/tenant', function () {
@@ -33,8 +35,14 @@ Route::get('/admin', function () {
     return view('admin.add-listing');
 });
 
-Route::get('/tenant', function () {
+Route::get('/payment', function () {
     return view('tenant.payment');
+});
+
+Route::get('/listings', [ListingController::class, 'index'])->name('listings');
+
+Route::get('/details', function () {
+    return view('tenant.listing-details');
 });
 
 
