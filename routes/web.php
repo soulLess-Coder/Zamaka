@@ -38,6 +38,10 @@ Route::get('/tenant', function () {
 });
 
 
+Route::get('/', function () {
+    return view('index');
+});
+
 
 
 
