@@ -30,7 +30,7 @@
 
         <div class="justify-self-start sm:flex sm:flex-row gap-x-10 items-center"> <!--Logo-->
             {{-- <img class="w-14 h-16 sm:w-20 sm:h-24" src={{asset('images/logo.svg')}} alt="logo"> --}}
-            <h1 class="text-xl mr-4 text-bold">Zamaka</h1>
+            <h1 class="text-xl mr-4 text-extrabold">Zamaka</h1>
         </div>
 
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -61,13 +61,14 @@
                 </button>
 
                 <!-- Profile dropdown -->
-                <div class="ml-3 relative">
+                
+                <!-- <div class="ml-3 relative">
                 <div>
                     <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="sr-only">Open user menu</span>
                     <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                     </button>
-                </div>
+                </div> -->
 
                 <!--
                     Dropdown menu, show/hide based on menu state.
@@ -91,6 +92,7 @@
             <a href="{{ route('register') }}" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Register</a>
             <a href="{{ route('login') }}" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline">Login</a>
             <x-user-profile.avatar/>
+            
         @endif
       </div>
     </div>
@@ -109,30 +111,7 @@
 
       </div>
     </div>
-  </nav>
+</nav>
 
-{{-- <nav class="p-6 bg-white flex justify-between mb-6">
-    <ul class="flex items-center">
-
-        <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Home </a></li>
-        <li><a href="" class="hover:bg-red-600 rounded-full p-3  hover:text-white font-medium">Book Appointment </a></li>
-        <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">Ticket</a></li>
-        <li><a href="" class="hover:bg-red-600 rounded-full p-3 hover:text-white font-medium">About Us </a></li>
-        <li><a href="" class="ml-3 p-3 rounded-full bg-red-600 w-40 px-4 py-2 text-lg text-white transition-colors
-            duration-300 rounded-md shadow hover:bg-red-800 focus:outline-none focus:ring-red-200 focus:ring-4 radius">Listings </a></li>
-    </ul>
-
-    <ul class="flex items-center">
-        <li><a href="" class="p-3 pr-0">Salman |</a></li>
-        <li><a href="" class=" p-4 rounded-lg p-1">Logout </a></li>
-        <div class="h-12 w-12 rounded-full flex items-center border-gray-200 border">
-            <img src="./images/person.png">
-        </div>
-
-        <li><a href="{{ route('login') }}" class="p-3 pr-0 text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Login |</a></li>
-        <li><a href="{{ route('register') }}" class="p-1 text-black hover:bg-red-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Register </a></li>
-    </ul>
-
-</nav> --}}
 
 

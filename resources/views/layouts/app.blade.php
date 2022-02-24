@@ -18,6 +18,9 @@
     <script>
         $( "#mobile-button" ).click(function() {
             $( "#mobile-menu" ).toggle();
-    });
+        });
+        $( "#avatar" ).click(function() {
+            $( "#drop-down" ).toggle();
+        });
     </script>
 </html>
