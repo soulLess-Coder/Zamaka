@@ -30,7 +30,7 @@
 
         <div class="items-center justify-self-start sm:flex sm:flex-row gap-x-10"> <!--Logo-->
             {{-- <img class="h-16 w-14 sm:w-20 sm:h-24" src={{asset('images/logo.svg')}} alt="logo"> --}}
-            <h1 class="mr-4 text-xl text-extrabold">Zamaka</h1>
+            <a href="{{ route('listings') }}"><h1 class="mr-4 text-xl text-extrabold">Zamaka</h1></a>
         </div>
 
         <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
