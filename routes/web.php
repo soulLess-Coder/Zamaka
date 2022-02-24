@@ -49,6 +49,11 @@ Route::get('/adminDashboard', function () {
     return view('admin.admin-dashboard');
 });
 
+Route::get('/', function () {
+    return view('index');
+});
+
+
 
 
 
