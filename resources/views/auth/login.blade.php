@@ -3,7 +3,7 @@
 @section('content')
 
 
-
+<form method="POST" action="">
 <div class="items-center justify-center sm:flex sm:h-screen">
     <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
       <div class="flex justify-center sm:col-span-2">
@@ -38,4 +38,5 @@
     </div>
 </div>
 </div>
+</form>
 @endsection
