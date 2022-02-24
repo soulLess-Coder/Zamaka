@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 
             <form id="login">
                 <div class="bg-white dark:bg-gray-800">
@@ -142,3 +144,4 @@
             </style>
 
 
+@endsection

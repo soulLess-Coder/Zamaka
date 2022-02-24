@@ -1,23 +1,23 @@
-<div class="text-gray-500 menu md:mt-6 md:w-full rounded bg-white shadow-md absolute z-20 right-0 w-40 mt-3 py-2 animated faster fadeIn" id="drop-down">
+<div class="absolute right-0 z-20 w-40 py-2 mt-3 text-gray-500 bg-white rounded shadow-md menu md:mt-6 md:w-full animated faster fadeIn" id="drop-down">
     <!-- item -->
-    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="#">
-        <i class="fad fa-user-edit text-xs mr-1"></i> 
+    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="{{ route('userprofile') }}">
+        <i class="mr-1 text-xs fad fa-user-edit"></i>
         My Profile
-    </a>     
+    </a>
     <!-- end item -->
 
     <!-- item -->
-    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="#">
-        <i class="fad fa-inbox-in text-xs mr-1"></i> 
+    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="#">
+        <i class="mr-1 text-xs fad fa-inbox-in"></i>
         Inbox
-    </a>     
+    </a>
     <!-- end item -->
     <hr>
 
     <!-- item -->
-    <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="#">
-        <i class="fad fa-user-times text-xs mr-1"></i> 
-        log out ->
-    </a>     
+    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="#">
+        <i class="mr-1 text-xs fad fa-user-times"></i>
+        <h3 class="text-red-400">Log Out </h3>
+    </a>
     <!-- end item -->
 </div>
