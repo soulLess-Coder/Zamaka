@@ -22,16 +22,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/profile', [UserProfileController::class, 'index'])->name('userprofile');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
+Route::get('/profile', [UserProfileController::class, 'index'])->name('userprofile');
 
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
 
-/* ***Mahad's Routes*** */
-
-Route::get('/admin', function () {
+Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
 });
 
@@ -45,50 +45,16 @@ Route::get('/details', function () {
     return view('tenant.listing-details');
 });
 
-Route::get('/adminDashboard', function () {
+Route::get('/admin', function () {
     return view('admin.admin-dashboard');
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *** Usman's Routes *** */
-
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
+Route::get('/', function () {
+    return view('index');
+});
 
 Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
+
 Route::get('/complaints', [ComplaintController::class, 'index'])->name('complaint');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ***Salman's Routes*** */
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

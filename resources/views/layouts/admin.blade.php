@@ -13,11 +13,13 @@
         <x-admin-header/>
         <x-admin-sidebar/>
         @yield('content')
-
     </body>
     <script>
         $( "#mobile-button" ).click(function() {
             $( "#mobile-menu" ).toggle();
-    });
+        });
+        $( "#avatar" ).click(function() {
+            $( "#drop-down" ).toggle();
+        });
     </script>
 </html>
