@@ -13,7 +13,6 @@
         <x-admin-header/>
         <x-admin-sidebar/>
         @yield('content')
-
     </body>
     <script>
         $( "#mobile-button" ).click(function() {
