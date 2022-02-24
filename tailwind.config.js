@@ -15,6 +15,7 @@ module.exports = {
         require("daisyui")
     ],
 
+    darkMode: 'class',
     // daisyUI config (optional)
     daisyui: {
         styled: true,
