@@ -1686,6 +1686,10 @@ html {
   margin-right: 0.25rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -2528,6 +2532,10 @@ html {
 
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-left {
