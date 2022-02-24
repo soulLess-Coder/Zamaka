@@ -49,7 +49,9 @@ Route::get('/adminDashboard', function () {
     return view('admin.admin-dashboard');
 });
 
-
+Route::get('/test', function(){
+    return view('tenent.test');
+});
 
 
 
