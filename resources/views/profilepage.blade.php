@@ -16,16 +16,19 @@
                         </div>
                         <div class="mx-auto">
                             <div class="w-11/12 mx-auto xl:w-9/12 xl:mx-0">
-                                <div class="relative h-48 rounded">
-                                    <div class="absolute bottom-0 flex items-center justify-center w-20 h-20 ml-12 -mb-10 bg-center bg-no-repeat bg-cover rounded-full shadow">
-                                        <img src="https://cdn.tuk.dev/assets/webapp/forms/form_layouts/form2.jpg" alt="" class="absolute top-0 bottom-0 left-0 right-0 z-0 object-cover w-full h-full rounded-full shadow" />
-                                        <div class="absolute top-0 bottom-0 left-0 right-0 z-0 bg-black rounded-full opacity-50"></div>
-                                        <div class="z-10 flex flex-col items-center justify-center text-gray-100 cursor-pointer">
-                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg1.svg" alt="Edit">
-                                            <p class="text-xs text-gray-100">Edit Picture</p>
+                                <input type="file" id="picture" class="hidden">
+                                <label for="picture">
+                                    <div class="relative h-48 rounded">
+                                        <div class="absolute bottom-0 flex items-center justify-center w-20 h-20 ml-12 -mb-10 bg-center bg-no-repeat bg-cover rounded-full shadow">
+                                            <img src="https://cdn.tuk.dev/assets/webapp/forms/form_layouts/form2.jpg" alt="" class="absolute top-0 bottom-0 left-0 right-0 z-0 object-cover w-full h-full rounded-full shadow" />
+                                            <div class="absolute top-0 bottom-0 left-0 right-0 z-0 bg-black rounded-full opacity-50 "></div>
+                                            <div class="z-10 flex flex-col items-center justify-center text-gray-100 cursor-pointer">
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg1.svg" alt="Edit">
+                                                <p class="text-xs text-gray-100">Edit Picture</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </label>
                                 <div class="flex flex-col w-full mt-16 xl:w-2/6 lg:w-1/2 md:w-1/2">
                                     <label for="username" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Username<span class="text-red-500">* </span></label>
                                     <input tabindex="0" type="text" id="username" name="username" required class="py-3 pl-3 text-sm text-gray-600 placeholder-gray-500 bg-transparent border border-gray-300 rounded shadow-sm dark:border-gray-700 focus:outline-none focus:border-indigo-700 dark:text-gray-400" placeholder="@example" />

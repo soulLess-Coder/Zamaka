@@ -58,3 +58,12 @@ Route::get('/compare', [ComparisionController::class, 'index'])->name('compare')
 Route::get('/complaints', [ComplaintController::class, 'index'])->name('complaint');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+//Owner Routes
+Route::get('/owner', function () {
+    return view('owner.owner-dashboard');
+});
+
+Route::get('/maintenance-log', function () {
+    return view('owner.maintenance-records');
+});
