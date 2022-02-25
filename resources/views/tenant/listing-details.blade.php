@@ -1,53 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
-    <div class="grid grid-cols-1">
-        <div class="grid grid-cols-2 p-3 items-center sm:flex sm:flex-row sm:justify-between"> <!--Header-->
-            <div class="justify-self-start sm:flex sm:flex-row gap-x-10 items-center"> <!--Logo-->
-               <img class="w-14 h-16 sm:w-20 sm:h-24" src="/dist/assets/logo.png" alt="logo">
-               <div class="hidden sm:flex sm:flex-wrap md:flex-row sm:justify-around md:justify-between md:gap-x-10 sm:justify-self-start">
-                    <div>
-                         <button class="px-4 sm:p-1 md:px-4 hover:bg-zamaka hover:shadow-md hover:shadow-zamaka/60 rounded-full">Home</button>
-                    </div>
-                    <div>
-                         <button class="px-4 sm:p-1 md:px-4 hover:bg-zamaka hover:shadow-md hover:shadow-zamaka/60 rounded-full">About Us</button>
-                    </div>
-                    <div>
-                         <button class="px-4 sm:p-1 md:px-4 hover:bg-zamaka hover:shadow-md hover:shadow-zamaka/60 rounded-full">Book Appointment</button>
-                    </div>
-                    <div>
-                         <button class="px-4 sm:p-1 md:px-4 hover:bg-zamaka hover:shadow-md hover:shadow-zamaka/60 rounded-full">Listings</button>
-                    </div>
-                </div>
-            </div>
-            <div class="justify-self-end shadow-md shadow-zamaka/50 rounded-md sm:shadow-none"> <!--menu-->
-                <div class="dropdown dropdown-end items-center">
-                    <img tabindex="0" class="sm:hidden" src="/dist/icons/menu.svg" alt="menu">
-                    <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                          <a>Home</a>
-                        </li>
-                        <li>
-                          <a>About US</a>
-                        </li>
-                        <li>
-                          <a>Book Appointment</a>
-                        </li>
-                        <li>
-                          <a>Listings</a>
-                        </li>
-                      </ul>
-                </div>
-                <div class="hidden sm:flex flex-row"> <!--User-->
-                    <div class="p-1 mx-2 self-center">SALMAN</div>
-                    <div class="border-l-2 border-black"></div>
-                    <div class="p-1 mx-2">
-                        <img src="/dist/icons/icon user.png" alt="user">
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div> <!--Body-->
             <div class="max-w-full h-96 bg-black my-10 rounded-xl mx-5"> <!--Top Image-->
                 <img class="object-cover h-96 w-full rounded-xl" src="/dist/assets/old house.png" alt="old house">

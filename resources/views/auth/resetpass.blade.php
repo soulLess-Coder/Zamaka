@@ -1,4 +1,8 @@
 
+@extends('layouts.app')
+
+@section('content')
+
 
 <div class="flex flex-col items-center h-screen p-3 mx-3 rounded-2xl">
     <div class="">
@@ -37,3 +41,5 @@
       <h3>Already have an Account? <u class="text-blue-600">Login</u></h3>
     </div>
 </div>
+
+@endsection

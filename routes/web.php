@@ -6,6 +6,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\resetController;
+use App\Http\Controllers\PropertyDetailsController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -26,10 +28,12 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/profile', [UserProfileController::class, 'index'])->name('userprofile');
-
+Route::get('/reset', [resetController::class, 'index'])->name('resetpass');
+Route::get('/details', [PropertyDetailsController::class, 'index'])->name('details');
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
+
 
 Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
@@ -41,13 +45,15 @@ Route::get('/payment', function () {
 
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 
-Route::get('/details', function () {
-    return view('tenant.listing-details');
-});
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');
 });
+
+Route::get('/tenant', function () {
+    return view('tenant.index');
+});
+
 
 Route::get('/', function () {
     return view('index');
