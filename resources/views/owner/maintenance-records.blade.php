@@ -1,7 +1,7 @@
 @extends('layouts.owner')
 
 @section('content')
-<x-admin-sidebar>
+<x-owner-sidebar>
     <div class="overflow-x-auto w-full">
         <table class="table w-full">
             <!-- head -->
@@ -12,9 +12,10 @@
                     <input type="checkbox" class="checkbox">
                 </label>
                 </th>
+                <th>Image</th>
                 <th>Date</th>
                 <th>User Id</th>
-                <th>Property</th>
+                <th>Property Id</th>
                 <th>Full Name</th>
                 <th>Status</th>
                 <th>Title</th>
@@ -33,25 +34,21 @@
                 <td>
                 <div class="flex items-center space-x-3">
                     <div class="avatar">
-                    <div class="w-12 h-12 mask mask-squircle">
-                        <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component">
+                    <div class="w-16 h-16">
+                        <img src="" alt="Receipt Image">
                     </div>
                     </div>
                     <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                    </div>
+                  
                 </div>
                 </td>
+                <td>01/12/2012</td>
+                <td>Purple</td>
                 <td>
                 Zemlak, Daniel and Leannon
                 <br>
                 <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
                 </td>
-                <td>Purple</td>
-                <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-                </th>
             </tr>
             <!-- row 2 -->
             <tr>
@@ -66,10 +63,6 @@
                     <div class="w-12 h-12 mask mask-squircle">
                         <img src="/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component">
                     </div>
-                    </div>
-                    <div>
-                    <div class="font-bold">Brice Swyre</div>
-                    <div class="text-sm opacity-50">China</div>
                     </div>
                 </div>
                 </td>
@@ -97,10 +90,6 @@
                         <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component">
                     </div>
                     </div>
-                    <div>
-                    <div class="font-bold">Marjy Ferencz</div>
-                    <div class="text-sm opacity-50">Russia</div>
-                    </div>
                 </div>
                 </td>
                 <td>
@@ -127,10 +116,6 @@
                         <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component">
                     </div>
                     </div>
-                    <div>
-                    <div class="font-bold">Yancy Tear</div>
-                    <div class="text-sm opacity-50">Brazil</div>
-                    </div>
                 </div>
                 </td>
                 <td>
@@ -146,16 +131,8 @@
             </tbody>
             <!-- foot -->
             <tfoot>
-            <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
-                <th></th>
-            </tr>
             </tfoot>
-            
         </table>
     </div>
-</x-admin-sidebar>
+</x-owner-sidebar>
 @endsection      

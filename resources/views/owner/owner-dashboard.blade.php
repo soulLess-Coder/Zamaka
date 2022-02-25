@@ -1,7 +1,7 @@
 @extends('layouts.owner')
 
 @section('content')
-<x-admin-sidebar>
+<x-owner-sidebar>
     <h1>Owner Dashboard</h1>
     <div class="bg-white shadow xl:w-3/4 2xl:w-4/5 w-full px-6 sm:px-12 py-5 sm:py-10">
         <div class="mb-5 sm:mb-10 rounded-tl-lg rounded-tr-lg">
@@ -263,5 +263,5 @@
             </div>
         </div>
     </div>
-</x-admin-sidebar>
+</x-owner-sidebar>
 @endsection      
