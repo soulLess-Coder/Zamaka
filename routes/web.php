@@ -75,7 +75,31 @@ Route::get('/owner', function () {
     return view('owner.owner-dashboard');
 });
 
-Route::get('/maintenance-log', function () {
+Route::get('/owner/Logs', function () {
     return view('owner.maintenance-records');
 });
 
+Route::get('/owner/occupantDetails', function () {
+    return view('owner.tenant-details');
+});
+
+Route::get('/owner/Ledger', function () {
+    return view('owner.tenant-details');
+});
+
+//Agent Routes
+Route::get('/agent', function () {
+    return view('agent.agent-dashboard');
+});
+
+Route::get('/agent/appointments', function () {
+    return view('agent.view-appointment');
+});
+
+Route::get('/agent/pastVisits', function () {
+    return view('agent.past-visits');
+});
+
+Route::get('/agent/report', function () {
+    return view('agent.visit-report');
+});
