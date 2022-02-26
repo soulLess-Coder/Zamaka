@@ -39,6 +39,7 @@ Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
 });
 
+
 Route::get('/payment', function () {
     return view('tenant.payment');
 });
@@ -48,6 +49,10 @@ Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');
+});
+
+Route::get('/admin/visitdetails', function () {
+    return view('admin.visitdetails');
 });
 
 Route::get('/tenant', function () {
@@ -73,3 +78,4 @@ Route::get('/owner', function () {
 Route::get('/maintenance-log', function () {
     return view('owner.maintenance-records');
 });
+

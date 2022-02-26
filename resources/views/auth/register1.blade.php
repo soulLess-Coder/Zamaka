@@ -22,16 +22,16 @@
     <div>
         <div class="justify-center pt-6">
             <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
-            <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+            <input type="text" id="Street" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
         </div>
 
         <div class="pt-6">
             <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
-            <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+            <input type="text" id="Street" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
         </div>
         <div class="pt-6">
             <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
-            <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+            <input type="text" id="Street" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
         </div>
     </div>
       <div class="inline-block pt-5 pl-4 pr-4">
