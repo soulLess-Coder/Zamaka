@@ -2,10 +2,7 @@
 
 @section('content')
 
-    <x-admin-sidebar/>
-
-
-
+<x-admin-sidebar/>
     <div class="pt-16">
         <button id="button" onclick="modalHandler(true)" class="px-10 py-2 text-white bg-indigo-600 rounded focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none hover:bg-indigo-700">Open Modal</button>
     </div>
@@ -136,9 +133,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 @endsection

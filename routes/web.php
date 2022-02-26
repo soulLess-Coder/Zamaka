@@ -34,6 +34,20 @@ Route::get('/tenant', function () {
     return view('tenant.index');
 });
 
+//Admin Routes
+Route::get('/admin/userlist', function () {
+    return view('admin.userlist');
+});
+
+Route::get('/admin/livelistings', function () {
+    return view('admin.livelistings');
+});
+
+Route::get('/admin/comparePropertyCondition', function () {
+    return view('admin.conditionComparision');
+});
+
+
 
 Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
