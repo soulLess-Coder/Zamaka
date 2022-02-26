@@ -2,7 +2,12 @@
 
 @section('content')
 <x-owner-sidebar>
-    <h1>Owner Dashboard</h1>
+    <div class="card w-96 bg-base-100 shadow-xl flex align-items-center justify-content-between">
+        <div class="card-data me-2"><h5>Propeties for Sale</h5><h2 class="fs-40 font-w600">684</h2></div>
+        <div class="donught-chart" style="margin-top: -10px;">
+            <canvas height="90" width="90" style="display: block;"></canvas>
+        </div>
+    </div>
     <div class="bg-white shadow xl:w-3/4 2xl:w-4/5 w-full px-6 sm:px-12 py-5 sm:py-10">
         <div class="mb-5 sm:mb-10 rounded-tl-lg rounded-tr-lg">
             <div class="sm:flex items-center justify-between">
@@ -17,7 +22,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div>                       
         <div class="">
             <div class="w-full overflow-x-auto">
                 <table class="w-full whitespace-nowrap">

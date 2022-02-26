@@ -26,7 +26,7 @@
               </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold">Addrees</label>
+                <label for="password" class="block font-bold">Address</label>
                 <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
@@ -115,7 +115,7 @@
               </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold">Addrees</label>
+                <label for="password" class="block font-bold">Address</label>
                 <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
@@ -206,7 +206,7 @@
               </div>
 
               <div class="mb-4">
-                <label for="password" class="block font-bold">Addrees</label>
+                <label for="password" class="block font-bold">Address</label>
                 <input  class="border-black border-2 w-25 h-5 p-4 @error('password') border-red-500 @enderror" value="" />
               </div>
 
