@@ -1,8 +1,6 @@
 @extends('layouts.admin')
 
 @section('content')
-
-<h1>
-    ADMIN DASHBOARD
-</h1>
+<x-admin-sidebar>
+</x-admin-sidebar>
 @endsection

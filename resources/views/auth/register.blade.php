@@ -14,26 +14,58 @@
       </div>
 
       <ul class="steps">
-        <li class="step step-primary ">Register 1</li>
-        <li class="step">Register 2</li>
-        <li class="step">Register 3</li>
+        <li class="step step-primary" id="step1">Register 1</li>
+        <li class="step" id="step2">Register 2</li>
+        <li class="step" id="step3">Register 3</li>
      </ul>
+     <form>
+      <div id="register1">
+          <div class="justify-center pt-6">
+              <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
+              <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
 
-    <div>
-        <div class="justify-center pt-6">
-            <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
-            <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-        </div>
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
+              <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
+              <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+      </div>
+      <div class="hidden" id="register2">
+          <div class="justify-center pt-6">
+              <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
+              <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
 
-        <div class="pt-6">
-            <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
-            <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-        </div>
-        <div class="pt-6">
-            <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
-            <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-        </div>
-    </div>
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
+              <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
+              <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+      </div>
+      <div class="hidden" id="register3">
+          <div class="justify-center pt-6">
+              <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
+              <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
+              <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+          <div class="pt-6">
+              <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
+              <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+          </div>
+      </div>
+     </form>
+   
       <div class="inline-block pt-5 pl-4 pr-4">
                 <input class="" type="checkbox" checked >
                 <label>By clicking this I Agree term and condition</label>
@@ -42,8 +74,45 @@
         <div class="w-3/4 h-10 m-10">
         <x-inputs.button type="submit" class="mx-auto " buttonText="Next" />
         <p>Already have an account? <a href="{{route('login')}}" class="text-blue-600 ">Login</a></p>
+        <a href="{{route('resetpass')}}" class="text-blue-600 ">Forget Password?</a>
       </div>
     </div>
 </div>
 </form>
+
+<script>
+  var currently_selected;
+  function changeSteps(selected){
+    if(selected == 1){
+      $( "#step2" ).toggleClass("step-primary");
+      $( "#step3" ).toggleClass("step-primary");
+
+      $( "#register2" ).toggleClass("hidden");
+      $( "#register3" ).toggleClass("hidden");
+    }
+    
+    if(selected == 2){
+      $( "#step2" ).toggleClass("step-primary");
+      $( "#step3" ).toggleClass("step-primary");
+
+      $( "#register2" ).toggleClass("hidden");
+      $( "#register3" ).toggleClass("hidden");
+    }
+
+    if(selected == 3){
+      $( "#step2" )toggle.Class("step-primary");
+      $( "#step3" ).removeClass("step-primary");
+
+      $( "#register2" ).toggleClass("hidden");
+      $( "#register3" ).toggleClass("hidden");
+    }
+  }
+
+  $( "#step2" ).click(function() {
+    changeSteps();
+  });
+  $( "#step3" ).click(function() {
+    changeSteps();
+  });
+</script>
 @endsection

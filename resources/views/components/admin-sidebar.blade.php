@@ -2,14 +2,14 @@
 <div class="flex flex-no-wrap">
     <!-- Sidebar starts -->
     <!-- Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] -->
-    <div style="min-height: 716px" class="w-64 relative shadow md:h-full flex-col justify-between flex">
+    <div style="min-height: 716px" class="w-64 relative shadow md:h-full flex-col justify-between flex hidden sm:block">
         <div class="px-8">
             <div class="h-16 w-full flex items-center">
                 <h1 class="extrabold text-red-500 text-2xl">Zamaka</h1>
             </div>
             <ul class="mt-12">
                 <li class="flex w-full justify-between text-gray-300 cursor-pointer items-center mb-6">
-                    <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <a href="/admin/admin-dashboard" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z"></path>
                             <rect x="4" y="4" width="6" height="6" rx="1"></rect>
@@ -19,7 +19,6 @@
                         </svg>
                         <span class="text-sm ml-2">Dashboard</span>
                     </a>
-                    <div class="py-1 px-3 bg-gray-600 rounded text-gray-300 flex items-center justify-center text-xs">5</div>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
                     <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
@@ -29,7 +28,7 @@
                         </svg>
                         <span class="text-sm ml-2">Agent Request</span>
                     </a>
-                    <div class="py-1 px-3 bg-gray-600 rounded text-gray-300 flex items-center justify-center text-xs">8</div>
+
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
                     <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
@@ -60,10 +59,9 @@
                         </svg>
                         <span class="text-sm ml-2">Roles</span>
                     </a>
-                    <div class="py-1 px-3 bg-gray-600 rounded text-gray-300 flex items-center justify-center text-xs">25</div>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                    <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <a href="/admin/conditionComparision" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <polyline points="12 4 4 8 12 12 20 8 12 4" />
@@ -73,6 +71,27 @@
                         <span class="text-sm ml-2">Maintance record</span>
                     </a>
                 </li>
+                <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
+                    <a href="/admin/livelistings" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <polyline points="12 4 4 8 12 12 20 8 12 4" />
+                            <polyline points="4 12 12 16 20 12" />
+                            <polyline points="4 16 12 20 20 16" />
+                        </svg>
+                        <span class="text-sm ml-2">Listings</span>
+                    </a>
+                </li>
+                <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
+                    <a href="/admin/userlist" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"></path>
+                        </svg>
+                        <span class="text-sm ml-2">List of Users</span>
+                    </a>
+                </li>
+
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center">
                     <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -110,6 +129,7 @@
             </ul>
         </div>
     </div>
+
     <div class="w-64 z-40 absolute bg-gray-800 shadow md:h-full flex-col justify-between sm:hidden transition duration-150 ease-in-out" id="mobile-nav">
         <button aria-label="toggle sidebar" id="openSideBar" class="h-10 w-10 bg-gray-800 absolute right-0 mt-16 -mr-10 flex items-center shadow rounded-tr rounded-br justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 rounded focus:ring-gray-800" onclick="sidebarHandler(true)">
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg7.svg" alt="toggler">
@@ -236,7 +256,7 @@
     <!-- Remove class [ h-64 ] when adding a card block -->
     <div class="container mx-auto py-10 md:w-4/5 w-11/12 px-6">
         <!-- Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border -->
-        <div class="w-full h-full rounded border-dashed border-2 border-gray-300">
+        <div class="w-full h-full rounded ">
             <!-- Place your content here -->
             {{$slot}}
         </div>

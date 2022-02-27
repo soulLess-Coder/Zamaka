@@ -2,6 +2,15 @@
 
 @section('content')
 <x-owner-sidebar>
+    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card-body">
+        <h2 class="card-title">Card title!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="justify-end card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+        </div>
+    </div>
+</div>
     <div class="card w-96 bg-base-100 shadow-xl flex align-items-center justify-content-between">
         <div class="card-data me-2"><h5>Propeties for Sale</h5><h2 class="fs-40 font-w600">684</h2></div>
         <div class="donught-chart" style="margin-top: -10px;">
