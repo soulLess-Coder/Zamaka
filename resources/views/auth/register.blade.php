@@ -65,7 +65,7 @@
           </div>
       </div>
      </form>
-   
+
       <div class="inline-block pt-5 pl-4 pr-4">
                 <input class="" type="checkbox" checked >
                 <label>By clicking this I Agree term and condition</label>
@@ -90,7 +90,7 @@
       $( "#register2" ).toggleClass("hidden");
       $( "#register3" ).toggleClass("hidden");
     }
-    
+
     if(selected == 2){
       $( "#step2" ).toggleClass("step-primary");
       $( "#step3" ).toggleClass("step-primary");
