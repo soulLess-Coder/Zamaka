@@ -169,17 +169,14 @@
             <div class="mb-4 lg:col-span-2">
 
                 <span class="inline-grid "><p class="p-2 font-bold"> Price </Address></p></span>
-
                 <span class="inline-grid " ><input name="Price" id="Price" placeholder="Price" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
                          @error('Price') border-red-500 @enderror" value="{{ old('Price') }}">
-
                         @error('Bath Room')
                         <div class="mt-2 text-sm text-red-500">
                          {{ $message }}
                         </div>
                         @enderror
                     </span>
-
             </div>
 
             <div class="w-32 h-32 p-4 mb-4">
@@ -188,13 +185,6 @@
                 </label>
                 <x-inputs.button type="submit" buttonText="Add"/>
               </div>
-
-
-{{--  --}}
-
-
-
-
 </form>
 </body>
 @endsection

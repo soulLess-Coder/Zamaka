@@ -47,12 +47,22 @@ Route::get('/admin/comparePropertyCondition', function () {
     return view('admin.conditionComparision');
 });
 
+Route::get('/admin/chat', function () {
+    return view('admin.chat');
+});
 
 
 Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
 });
 
+Route::get('/admin/banned', function () {
+    return view('admin.ban-list');
+});
+
+Route::get('/admin/addTenant', function () {
+    return view('admin.add-tenant-details');
+});
 
 Route::get('/payment', function () {
     return view('tenant.payment');
