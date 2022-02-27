@@ -41,6 +41,11 @@ Route::get('/admin/userlist', function () {
     return view('admin.userlist');
 });
 
+Route::get('/admin/assignTasks', function () {
+    return view('admin.assigntask');
+});
+
+
 Route::get('/admin/livelistings', function () {
     return view('admin.livelistings');
 });
