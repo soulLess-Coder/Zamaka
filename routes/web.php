@@ -45,6 +45,9 @@ Route::get('/admin/assignTasks', function () {
     return view('admin.assigntask');
 });
 
+Route::get('/admin/assignrole', function () {
+    return view('admin.assign-roles');
+});
 
 Route::get('/admin/livelistings', function () {
     return view('admin.livelistings');
