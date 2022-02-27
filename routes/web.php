@@ -33,7 +33,9 @@ Route::get('/details', [PropertyDetailsController::class, 'index'])->name('detai
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
-
+Route::get('/request', function () {
+    return view('/components/maintenance_request');
+});
 //Admin Routes
 Route::get('/admin/userlist', function () {
     return view('admin.userlist');
