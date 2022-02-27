@@ -37,7 +37,7 @@ Route::get('/tenant/request', function () {
     return view('tenant.maintenance_request');
 });
 //Admin Routes
-Route::get('/admin/userlist', function () {
+Route::get('/admin/userlist', function () { //C
     return view('admin.userlist');
 });
 
@@ -138,4 +138,8 @@ Route::get('/agent/report', function () {
 
 Route::get('/finance/balancesheet', function () {
     return view('finance.balancesheet');
+});
+
+Route::get('/admin/approval', function () {
+    return view('admin.approval');
 });
