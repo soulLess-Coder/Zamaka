@@ -134,3 +134,15 @@ Route::get('/agent/report', function () {
 Route::get('/finance/balancesheet', function () {
     return view('finance.balancesheet');
 });
+
+Route::get('/finance/chartofAccounts', function () {
+    return view('finance.chartofAccounts');
+});
+
+Route::get('/finance/trailofBalance', function () {
+    return view('finance.trailofBalance');
+});
+
+Route::get('/finance/profitandloss', function () {
+    return view('finance.profitandloss');
+});
