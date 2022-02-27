@@ -85,8 +85,8 @@ Route::get('/admin', function () {
     return view('admin.admin-dashboard');
 });
 
-Route::get('/admin/visitdetails', function () {
-    return view('admin.visitdetails');
+Route::get('/agent/visitdetails', function () {
+    return view('agent.visitdetails');
 });
 
 Route::get('/tenant', function () {

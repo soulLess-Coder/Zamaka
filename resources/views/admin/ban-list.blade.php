@@ -29,7 +29,7 @@
 
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">T-ID: 588 558</p>
                                 </td>
-                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0">-----</td>
+                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0"></td>
                                 <td tabindex="0" class="focus:outline-none font-medium px-10 lg:px-6 xl:px-0">
                                     Usman
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">03065393573</p>
@@ -55,7 +55,7 @@
 
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">A-ID: 255 455</p>
                                 </td>
-                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0">-----</td>
+                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0"></td>
                                 <td tabindex="0" class="focus:outline-none font-medium px-10 lg:px-6 xl:px-0">
                                    Mahad
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">03065393573</p>
@@ -81,7 +81,7 @@
 
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">O-ID: 125 2558</p>
                                 </td>
-                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0">-----</td>
+                                <td tabindex="0" class="focus:outline-none px-10 lg:px-6 xl:px-0"></td>
                                 <td tabindex="0" class="focus:outline-none font-medium px-10 lg:px-6 xl:px-0">
                                     Basit Baig
                                     <p tabindex="0" class="focus:outline-none text-gray-600 font-normal mt-2">03065393573</p>
