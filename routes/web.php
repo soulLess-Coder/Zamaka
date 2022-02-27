@@ -33,8 +33,8 @@ Route::get('/details', [PropertyDetailsController::class, 'index'])->name('detai
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
-Route::get('/request', function () {
-    return view('/components/maintenance_request');
+Route::get('/tenant/request', function () {
+    return view('tenant.maintenance_request');
 });
 //Admin Routes
 Route::get('/admin/userlist', function () {
@@ -128,4 +128,9 @@ Route::get('/agent/pastVisits', function () {
 
 Route::get('/agent/report', function () {
     return view('agent.visit-report');
+});
+
+
+Route::get('/finance/balancesheet', function () {
+    return view('finance.balancesheet');
 });

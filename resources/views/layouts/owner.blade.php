@@ -14,46 +14,15 @@
         <x-header/>
         @yield('content')
         <x-footer/>
+        <script src="../path/to/flowbite/dist/flowbite.js"></script>
     </body>
+
     <script>
         $( "#mobile-button" ).click(function() {
             $( "#mobile-menu" ).toggle();
         });
         $( "#avatar" ).click(function() {
             $( "#drop-down" ).toggle();
-        });
-        var currently_selected;
-        function changeSteps(selected){
-            if(selected == 1){
-            $( "#step2" ).toggleClass("step-primary");
-            $( "#step3" ).toggleClass("step-primary");
-
-            $( "#register2" ).toggleClass("hidden");
-            $( "#register3" ).toggleClass("hidden");
-            }
-
-            if(selected == 2){
-            $( "#step2" ).toggleClass("step-primary");
-            $( "#step3" ).toggleClass("step-primary");
-
-            $( "#register2" ).toggleClass("hidden");
-            $( "#register3" ).toggleClass("hidden");
-            }
-
-            if(selected == 3){
-            $( "#step2" ).toggleClass("step-primary");
-            $( "#step3" ).removeClass("step-primary");
-
-            $( "#register2" ).toggleClass("hidden");
-            $( "#register3" ).toggleClass("hidden");
-            }
-        }
-
-        $( "#step2" ).click(function() {
-            changeSteps();
-        });
-        $( "#step3" ).click(function() {
-            changeSteps();
         });
     </script>
 </html>

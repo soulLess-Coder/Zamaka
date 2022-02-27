@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <div class="flex items-center justify-center sm:h-screen">
     <div class="grid grid-cols-1 gap-5 my-auto">
       <h2 class=""><b class="text-3xl">Maintaince</b></h2>
@@ -47,3 +50,7 @@
 
     </div>
   </div>
+
+@endsection
+
+
