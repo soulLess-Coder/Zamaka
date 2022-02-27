@@ -35,31 +35,6 @@
       <p class="text-center">Don't have an account? <a href="/register" class=" text-blue-600">Register</a></p>
     </div>
     <div>
-    <div class="form-control">
-        Owner
-        <label class="cursor-pointer label">
-          <input type="radio" name="radio-6" class="radio checked:bg-red-500" checked>
-        </label>
-      </div>
-      <div class="form-control">
-        <label class="cursor-pointer label">
-          <input type="radio" name="radio-6" class="radio checked:bg-blue-500" checked>
-        </label>
-        Tenant
-      </div>
-    </div>
-    <div class="form-control">
-        Owner
-        <label class="cursor-pointer label">
-          <input type="radio" name="radio-6" class="radio checked:bg-red-500" checked>
-        </label>
-      </div>
-      <div class="form-control">
-        <label class="cursor-pointer label">
-          <input type="radio" name="radio-6" class="radio checked:bg-blue-500" checked>
-        </label>
-        Tenant
-      </div>
 </div>
 </div>
 </form>
