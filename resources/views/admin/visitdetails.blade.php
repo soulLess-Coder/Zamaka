@@ -4,7 +4,7 @@
 <x-admin-sidebar>
     <div class="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
         <div class="flex w-full pl-3 sm:pl-6 pr-3 py-5 items-center justify-between bg-indigo-50 rounded-t">
-            <h3 class="text-gray-800 font-bold text-base sm:text-xl">Jack and Jill Enterprise</h3>
+            <h3 class="text-gray-800 font-bold text-base sm:text-xl">Visiting Details</h3>
             <button class="ml-0 sm:ml-6 bg-indigo-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 rounded text-white px-5 h-8 flex items-center text-sm">Create New</button>
         </div>
         <div class="flex flex-col md:flex-row p-3 justify-between items-start md:items-stretch w-full">
@@ -14,27 +14,10 @@
                         <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg1.svg" alt="trash">
                         <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg1dark.svg" alt="trash">
                     </button>
-                    <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-gray-600 p-2 ml-2 border-gray-200 dark:text-gray-400 border rounded focus:outline-none focus:border-gray-800 focus:shadow-outline-gray" aria-label="upload Table" role="button">
-                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg2.svg" alt="upload">
-                    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg2dark.svg" alt="upload">
-                    </button>
                 </div>
             </div>
             <div class="w-full md:w-2/3 flex flex-col md:flex-row items-start md:items-center justify-end">
-                <div class="flex items-center border-gray-200 border rounded mt-3 md:mt-0">
-                    <button aria-label="Display style 1" role="button" class="text-gray-600 dark:text-gray-400 p-2 border-transparent border rounded focus:outline-none focus:border-gray-800 focus:shadow-outline-gray focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">
-                        <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg3.svg" alt="display">
-                    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg3dark.svg" alt="display">
-                    </button>
-                    <button role="button" aria-label="Display style 2" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-indigo-700 p-2 bg-gray-200 border border-transparent rounded focus:outline-none focus:border-gray-800 focus:shadow-outline-gray">
-                        <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg4.svg" alt="display">
-                        <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg4dark.svg" alt="display">
-                    </button>
-                    <button role="button" aria-label="Display style 3" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-gray-600 dark:text-gray-400 p-2 border-transparent border rounded focus:outline-none focus:border-gray-800 focus:shadow-outline-gray">
-                        <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg5.svg" alt="display">
-                        <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg5dark.svg" alt="display">
-                    </button>
-                </div>
+
                 <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-0">
                     <div class="relative w-full">
                         <div aria-hidden="true" class="absolute cursor-pointer text-gray-600 dark:text-gray-400 flex items-center pr-3 right-0 border-l h-full">
