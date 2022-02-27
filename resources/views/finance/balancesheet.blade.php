@@ -4,7 +4,7 @@
     <x-admin-sidebar>
         <div class="overflow-x-auto">
             <table class="table w-full">
-              <!-- head -->
+
               <thead>
                 <tr>
 
@@ -15,21 +15,21 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- row 1 -->
+
                 <tr>
                   <td>Capital Account</td>
                   <td>0.00</td>
                   <td>Fixed Assets</td>
                   <td>0.00</td>
                 </tr>
-                <!-- row 2 -->
+
                 <tr>
                     <td>Current Account</td>
                     <td>0.00</td>
                     <td>Current Assets</td>
                     <td>0.00</td>
                 </tr>
-                <!-- row 3 -->
+
                 <tr>
                     <td>Loan (Liablilities)</td>
                     <td>0.00</td>

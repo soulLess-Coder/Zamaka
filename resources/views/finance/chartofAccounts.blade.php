@@ -4,7 +4,7 @@
         <x-admin-sidebar>
             <div class="overflow-x-auto">
                 <table class="table w-full">
-                  <!-- head -->
+
                   <thead>
                     <tr>
                       <th>Account Name</th>
