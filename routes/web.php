@@ -143,6 +143,7 @@ Route::get('/finance/balancesheet', function () {
 Route::get('/admin/approval', function () {
     return view('admin.approval');
 });
+
 Route::get('/finance/chartofAccounts', function () {
     return view('finance.chartofAccounts');
 });
