@@ -155,3 +155,7 @@ Route::get('/finance/trailofBalance', function () {
 Route::get('/finance/profitandloss', function () {
     return view('finance.profitandloss');
 });
+
+Route::get('/finance/balancesheet/edit', function () {
+    return view('finance.edit');
+});
