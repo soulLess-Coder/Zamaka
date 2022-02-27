@@ -5,7 +5,11 @@
 <div class="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
                     <div class="flex w-full pl-3 sm:pl-6 pr-3 py-5 items-center justify-between bg-indigo-50 rounded-t">
                         <h3 class="text-gray-800 font-bold text-base sm:text-xl">Listing details </h3>
-                        <button class="ml-0 sm:ml-6 bg-indigo-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 rounded text-white px-5 h-8 flex items-center text-sm">Create New</button>
+                        <form action="/admin/addListing">
+                            <button type="submit" class="ml-0 sm:ml-6 bg-indigo-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2
+                            focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 rounded text-white px-5 h-8 flex items-center
+                            text-sm">Create New</button>
+                        </form>
                     </div>
                     <div class="flex flex-col md:flex-row p-3 justify-between items-start md:items-stretch w-full">
                         <div class="w-full md:w-1/3 flex flex-col md:flex-row items-start md:items-center">
@@ -177,7 +181,7 @@
                                                         </div>
                                                         <div class="w-1/3">
                                                             <p class="text-gray-600 dark:text-gray-400 font-normal text-xs"></p>
-                                                            <h5 class="text-gray-800 dark:text-gray-100 font-normal text-xs">6 monmths</h5>
+                                                            <h5 class="text-gray-800 dark:text-gray-100 font-normal text-xs">6 months</h5>
                                                         </div>
                                                     </div>
                                                     <div class="flex items-start mt-6">

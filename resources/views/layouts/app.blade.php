@@ -22,5 +22,43 @@
         $( "#avatar" ).click(function() {
             $( "#drop-down" ).toggle();
         });
+        var currently_selected;
+        function changeSteps(selected){
+            if(selected == 1){
+            $( "#step2" ).toggleClass("step-primary");
+            $( "#step3" ).toggleClass("step-primary");
+
+            $( "#register2" ).toggleClass("hidden");
+            $( "#register3" ).toggleClass("hidden");
+            }
+
+            if(selected == 2){
+            $( "#step2" ).addClass("step-primary");
+            $( "#step3" ).removeClass("step-primary");
+
+            $( "#register1" ).addClass("hidden");
+            $( "#register2" ).toggleClass("hidden");
+            $( "#register3" ).addClass("hidden");
+            }
+
+            if(selected == 3){
+            $( "#step2" ).removeClass("step-primary");
+            $( "#step3" ).addClass("step-primary");
+
+            $( "#register1" ).addClass("hidden");
+            $( "#register2" ).addClass("hidden");
+            $( "#register3" ).removeClass("hidden");
+            }
+        }
+
+        $( "#step1" ).click(function() {
+            changeSteps(1);
+        });
+        $( "#step2" ).click(function() {
+            changeSteps(2);
+        });
+        $( "#step3" ).click(function() {
+            changeSteps(3);
+        });
     </script>
 </html>

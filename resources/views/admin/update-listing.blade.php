@@ -2,6 +2,7 @@
 
 @section('content')
 
-    <x-admin-sidebar/>
+    <x-admin-sidebar>
 
+    </x-admin-sidebar>
 @endsection
