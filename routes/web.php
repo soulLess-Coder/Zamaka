@@ -45,6 +45,9 @@ Route::get('/admin/assignTasks', function () {
     return view('admin.assigntask');
 });
 
+Route::get('/admin/assignrole', function () {
+    return view('admin.assign-roles');
+});
 
 Route::get('/admin/livelistings', function () {
     return view('admin.livelistings');
@@ -82,8 +85,8 @@ Route::get('/admin', function () {
     return view('admin.admin-dashboard');
 });
 
-Route::get('/admin/visitdetails', function () {
-    return view('admin.visitdetails');
+Route::get('/agent/visitdetails', function () {
+    return view('agent.visitdetails');
 });
 
 Route::get('/tenant', function () {
