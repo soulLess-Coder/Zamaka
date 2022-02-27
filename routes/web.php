@@ -142,4 +142,14 @@ Route::get('/finance/balancesheet', function () {
 
 Route::get('/admin/approval', function () {
     return view('admin.approval');
+Route::get('/finance/chartofAccounts', function () {
+    return view('finance.chartofAccounts');
+});
+
+Route::get('/finance/trailofBalance', function () {
+    return view('finance.trailofBalance');
+});
+
+Route::get('/finance/profitandloss', function () {
+    return view('finance.profitandloss');
 });

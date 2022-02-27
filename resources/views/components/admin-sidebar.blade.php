@@ -38,10 +38,9 @@
                         </svg>
                         <span class="text-sm ml-2">Assign Tasks</span>
                     </a>
-
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                    <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                    <a href="" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z"></path>
                             <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
