@@ -4,8 +4,8 @@
 <x-admin-sidebar>
     <div class="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
         <div class="flex w-full pl-3 sm:pl-6 pr-3 py-5 items-center justify-between bg-indigo-50 rounded-t">
-            <h3 class="text-gray-800 font-bold text-base sm:text-xl">Visiting Details</h3>
-            <button class="ml-0 sm:ml-6 bg-indigo-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 rounded text-white px-5 h-8 flex items-center text-sm">Create New</button>
+            <h3 class="text-gray-800 font-bold text-base sm:text-xl">Listing with Tenant</h3>
+            <button onclick="window.location.href='/admin/addListing'" class="ml-0 sm:ml-6 bg-indigo-700 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hover:bg-indigo-600 rounded text-white px-5 h-8 flex items-center text-sm">Create New</button>
         </div>
         <div class="flex flex-col md:flex-row p-3 justify-between items-start md:items-stretch w-full">
             <div class="w-full md:w-1/3 flex flex-col md:flex-row items-start md:items-center">
@@ -82,16 +82,6 @@
                         </th>
                         <th role="columnheader" class="border-l border-gray-300 pl-4 pr-12 whitespace-no-wrap w-32">
                             <p class="text-gray-800 dark:text-gray-100 font-normal text-left text-xs tracking-normal leading-4">Actions</p>
-                            <button role="button" aria-label="option" class="cursor-pointer  mr-3 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded">
-                                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg8.svg" alt="down">
-                                    <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg8dark.svg" alt="down">
-                                </button>
-                                <ul class="bg-white shadow rounded mt-2 py-1 mr-1 w-32 absolute top-0 right-0 mt-8 hidden dropdown-content">
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Option 1</li>
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Option 2</li>
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Option 3</li>
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Option 4</li>
-                                </ul>
                         </th>
                     </tr>
                 </thead>
@@ -135,13 +125,8 @@
                             <p class="text-gray-800 dark:text-gray-100 font-normal text-left text-xs tracking-normal leading-4">9000</p>
                         </td>
                         <td class="pl-4 pr-4 whitespace-no-wrap w-32">
-                            <div class="bg-blue-100 h-6 w-20 rounded-md flex items-center justify-center">
-                                <span class="text-xs text-blue-700 font-normal">Assigned</span>
-                            </div>
-                                <ul aria-label="Options" class="invisible z-10 bg-white transition duration-300 opacity-0 bg-white shadow rounded mt-2 w-48 py-1 absolute">
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Edit Project</li>
-                                    <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Delete Project</li>
-                                </ul>
+                            <div class="h-6 w-20 rounded-md flex items-center justify-center">
+                                <a href="/admin/newtenant" class="text-xs text-blue-700 font-normal">Edit Tenant</a>
                             </div>
                         </td>
                     </tr>
@@ -190,7 +175,11 @@
                                                 <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Owner</p>
                                                 <h5 class="text-xs font-normal text-indigo-700">Salman </h5>
                                             </div>
+                                            <div class="w-1/3">
+                                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Images</p>
+                                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/tasks-svg5.svg" alt="paper clip">
 
+                                            </div>
                                         </div>
                                         <hr class="w-full my-6 border-t border-gray-300" />
                                         <h5 class="mb-2 text-xs font-bold text-gray-600 dark:text-gray-400">Details</h5>

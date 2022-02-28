@@ -210,9 +210,6 @@
 
 
             <div class="w-32 h-32 p-4 mb-4">
-                <label class="block mb-2 text-sm font-bold text-gray-700" for="submit">
-                  Submit
-                </label>
                 <x-inputs.button type="submit" buttonText="Add"/>
               </div>
 </form>

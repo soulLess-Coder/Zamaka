@@ -66,6 +66,10 @@ Route::get('/admin/addListing', function () {
     return view('admin.add-listing');
 });
 
+Route::get('/admin/agentrequest', function () {
+    return view('admin.agentrequest');
+});
+
 Route::get('/admin/banned', function () {
     return view('admin.ban-list');
 });
@@ -80,6 +84,21 @@ Route::get('/payment', function () {
 
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 
+Route::get('/admin', function () {
+    return view('admin.admin-dashboard');
+});
+
+Route::get('/tenant/details', function () {
+    return view('tenant.listing-details');
+});
+
+Route::get('/career', function () {
+    return view('admin.addagent');
+});
+
+Route::get('/admin/newtenant', function () {
+    return view('admin.addnewtenant');
+});
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');
