@@ -5,7 +5,7 @@
     <div class="bg-white shadow xl:w-3/4 2xl:w-4/5 w-full px-6 sm:px-12 py-5 sm:py-10">
         <div class="mb-5 sm:mb-10 rounded-tl-lg rounded-tr-lg">
             <div class="sm:flex items-center justify-between">
-                <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">Invoices</p>
+                <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">Tenant Detail</p>
                 <div class="flex items-center mt-4 sm:mt-0">
                     <div aria-label="search bar" tabindex="0" class="focus:outline-none focus:ring-2 focus:ring-gray-600 flex items-center pl-3 bg-white border rounded-md border-gray-200">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/table_2-svg1.svg" alt="search">
@@ -263,4 +263,4 @@
         </div>
     </div>
 </x-owner-sidebar>
-@endsection      
+@endsection
