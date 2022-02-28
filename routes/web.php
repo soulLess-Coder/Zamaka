@@ -181,3 +181,20 @@ Route::get('/finance/profitandloss', function () {
 Route::get('/finance/balancesheet/edit', function () {
     return view('finance.edit');
 });
+
+
+Route::get('/finance/invoice', function () {
+    return view('finance.invoice');
+});
+
+Route::get('/finance/newinvoice', function () {
+    return view('finance.newinvoice');
+});
+
+Route::get('/finance/transaction', function () {
+    return view('finance.transaction');
+});
+
+Route::get('/finance/newtransaction', function () {
+    return view('finance.newtransaction');
+});
