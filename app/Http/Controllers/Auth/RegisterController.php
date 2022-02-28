@@ -20,26 +20,24 @@ class RegisterController extends Controller
         //validation
         $this->validate($request, [
             'name' => 'required|max:255',
-            'cnic_number' => 'required|max:255',
             'phone_number' => 'required|max:255',
             'email' => 'required|email|max:255',
-            'password' => 'required|confirmed'
+            'password' => 'required|confirmed',
+            'role' => 'required'
         ]);
         //store user
         User::create([
             'name' => $request->name,
-            'email'=> $request->email,
             'password' => Hash::make($request->password),
-            'cnic_number' => Hash::make($request->cnic_number),
-            'phone_number' => Hash::make($request->phone_number),
+            'email'=> $request->email,
+            'role' => $request->role,
+            'phone_number' => $request->phone_number,
         ]);
 
         //sign user in
         Auth::attempt($request->only('email', 'password'));
 
-        return redirect()->route('dashboard');
+        return redirect()->route('listings');
     }
-
-
     //redirect
 }

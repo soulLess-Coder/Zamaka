@@ -1,46 +1,82 @@
 @extends('layouts.app')
 
 @section('content')
-<form method="POST" action="">
-<div class="items-center justify-center sm:flex sm:h-screen">
-    <div class="grid grid-cols-1 m-10 sm:grid-cols-2 justify-evenly">
-      <div class="flex justify-center sm:col-span-2">
-        <h1 class="flex pt-16 text-5xl leading-loose">Sign Up</h1>
-        <br>
-      </div>
 
-      <div class="w-auto row-span-6 p-5 sm:bg-white h-72">
-        <img src="./images/signup.png" />
-      </div>
-     <form>
-      <div id="register">
-          <div class="justify-center pt-6">
-              <label class="justify-center order-4 font-bold sm:flex">Full Name</label>
-              <input type="" id="" placeholder="Full name" class="flex w-1/2 h-1 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-lg justify-self-center bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-          </div>
+    <div class="items-center justify-center sm:flex sm:h-screen">
+        <div class="grid grid-cols-1 m-10 sm:grid-cols-2 justify-evenly">
+        <div class="flex justify-center sm:col-span-2">
+            <h1 class="flex pt-16 text-5xl leading-loose">Sign Up</h1>
+            <br>
+        </div>
 
-          <div class="pt-6">
-              <label class="justify-center pt-4 font-bold sm:flex ">Phone No</label>
-              <input type="" id="" placeholder="03xx-xxxx-xxx" class="flex w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-          </div>
-          <div class="pt-6">
-              <label class="justify-center pt-4 font-bold sm:flex ">CNIC</label>
-              <input type="" id="" placeholder="CNIC Number" class="flex justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
-          </div>
-      </div>
+        <div class="w-auto row-span-6 p-5 sm:bg-white h-72">
+            <img src="./images/signup.png" />
+        </div>
+        <form method="post" action="{{route('register')}}">
+            @csrf
+            <div class="" >
+                <div class="justify-center pt-6">
+                    <label for="name" class="justify-center order-4 font-bold sm:flex">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name" class=" w-1/2 h-5 p-4 mt-2 ml-10 text-red-200 transform border-2 rounded-lg shadow-md bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+                    @error('name')
+                    <div class="text-red-500 mt-2 text-sm">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
 
-     </form>
 
-      <div class="inline-block pt-5 pl-4 pr-4">
-            <input class="" type="checkbox" checked >
-            <label>By clicking this I Agree term and condition</label>
-      </div>
+                <div class="pt-6">
+                    <label for="password" class="justify-center pt-4 font-bold sm:flex ">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Choose a password" class=" w-1/2 h-5 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-lg shadow-md bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+                    @error('password')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
 
-        <div class="w-3/4 h-10 m-10">
-        <x-inputs.button type="submit" class="mx-auto " buttonText="Sign Up" />
-        <p>Already have an account? <a href="{{route('login')}}" class="text-blue-600 ">Login</a></p>
-      </div>
+                <div class="pt-6">
+                    <label for="password_confirmation" class="justify-center pt-4 font-bold sm:flex ">Confirm password</label>
+                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm your password" class="flex w-1/2 h-5 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-xl shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+                    @error('password_confirmation')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+
+                <div class="pt-6">
+                    <label for="email" class="justify-center pt-4 font-bold sm:flex ">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" class="justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-xl shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+                    @error('email')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                <div class="pt-6">
+                    <label for="phone_number" class="justify-center pt-4 font-bold sm:flex ">Phone Number</label>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="03-xxx-xxxx-xx" class="justify-center w-1/2 h-3 p-4 mt-2 ml-10 text-red-300 transform border-2 rounded-xl shadow-lg bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />
+                    @error('email')
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $message }}
+                        </div>
+                    @enderror
+
+                </div>
+
+
+            </div>
+            <select name="role" aria-label="Sign up as" class="p-2 text-xs font-medium leading-3 text-gray-600 bg-gray-100 appearance-none focus:text-indigo-600 w-36 focus:outline-none">
+                <option class="text-xs font-medium leading-3 text-gray-600">Owner</option>
+                <option class="text-xs font-medium leading-3 text-gray-600">Tenant</option>
+            </select>
+            <div class="w-3/4 h-10 m-10">
+                <x-inputs.button buttonText="Sign Up" />
+                <p>Already have an account? <a href="{{route('login')}}" class="text-blue-600 ">Login</a></p>
+            </div>
+        </form>
+        </div>
     </div>
-</div>
-</form>
 @endsection

@@ -14,14 +14,6 @@
     <!-- end item -->
     <hr>
 
-    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="/tenant/maintenance_request">
-        <i class="mr-1 text-xs fad fa-user-edit"></i>
-        Maintanance
-    </a>
-    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="{{route('wishlist')}}">
-        <i class="mr-1 text-xs fad fa-user-edit"></i>
-        WishList
-    </a>
     <!-- item -->
     <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="{{ route('logout') }}">
         <i class="mr-1 text-xs fad fa-user-times"></i>
