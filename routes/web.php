@@ -3,6 +3,7 @@ use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\ComparisionController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\UserProfileController;
@@ -26,6 +27,9 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+
+Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
+
 
 Route::get('/profile', [UserProfileController::class, 'index'])->name('userprofile');
 Route::get('/reset', [resetController::class, 'index'])->name('resetpass');
@@ -86,7 +90,7 @@ Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');
-});
+})->name('admin');
 
 Route::get('/tenant/details', function () {
     return view('tenant.listing-details');
@@ -102,7 +106,7 @@ Route::get('/admin/newtenant', function () {
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');
-});
+})->name('admin');
 
 Route::get('/agent/visitdetails', function () {
     return view('agent.visitdetails');
@@ -114,7 +118,7 @@ Route::get('/tenant', function () {
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('tenant.listings');
 });
 
 Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
@@ -126,7 +130,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 //Owner Routes
 Route::get('/owner', function () {
     return view('owner.owner-dashboard');
-});
+})->name('owner');
 
 Route::get('/owner/Logs', function () {
     return view('owner.maintenance-records');
@@ -143,7 +147,7 @@ Route::get('/owner/Ledger', function () {
 //Agent Routes
 Route::get('/agent', function () {
     return view('agent.agent-dashboard');
-});
+})->name('agent');
 
 Route::get('/agent/appointments', function () {
     return view('agent.view-appointment');
@@ -198,3 +202,6 @@ Route::get('/finance/transaction', function () {
 Route::get('/finance/newtransaction', function () {
     return view('finance.newtransaction');
 });
+Route::get('/wishlist', function () {
+    return view('tenant.wishlist');
+})->name('wishlist');

@@ -23,6 +23,22 @@ class LoginController extends Controller
         if(!Auth::attempt($request->only('email', 'password'))){
             return back() -> with('status', 'Invalid email or password');
         }
-        return redirect()->route('dashboard');
+
+        $role = Auth::user()->role;
+        switch($role){
+            case "Owner":
+                return redirect('owner');
+                break;
+            case "Tenant":
+                return redirect()->route('listings');
+                break;
+            case "Admin":
+                return redirect()->route('admin');
+                break;
+            case "Agent":
+                return redirect()->route('agent');
+                break;
+        }
+        return redirect()->route('listings');
     }
 }

@@ -14,7 +14,6 @@
         <x-header/>
         @yield('content')
         <x-footer/>
-        <script src="../path/to/flowbite/dist/flowbite.js"></script>
     </body>
 
     <script>
