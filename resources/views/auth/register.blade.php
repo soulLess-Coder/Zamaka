@@ -37,9 +37,8 @@
       </div>
 
         <div class="w-3/4 h-10 m-10">
-        <x-inputs.button type="submit" class="mx-auto " buttonText="Next" />
+        <x-inputs.button type="submit" class="mx-auto " buttonText="Sign Up" />
         <p>Already have an account? <a href="{{route('login')}}" class="text-blue-600 ">Login</a></p>
-        <a href="{{route('resetpass')}}" class="text-blue-600 ">Forget Password?</a>
       </div>
     </div>
 </div>

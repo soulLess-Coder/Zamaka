@@ -1,8 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.app')
 @section('content')
 
-
-<x-admin-siderbar>
 
 <form class="grid min-h-screen grid-cols-1 bg-grey-200 place-items-center lg:grid-cols-2 xl:grid-cols-2">
     <!-- ... -->
@@ -85,5 +83,5 @@
 
 
 </form>
-</x-admin-siderbar>
+
 @endsection
