@@ -17,24 +17,7 @@
                 </div>
             </div>
             <div class="w-full md:w-2/3 flex flex-col md:flex-row items-start md:items-center justify-end">
-
-                <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-0">
-                    <div class="relative w-full">
-                        <div aria-hidden="true" class="absolute cursor-pointer text-gray-600 dark:text-gray-400 flex items-center pr-3 right-0 border-l h-full">
-                            <span class="ml-2 mr-1">
-                                <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg6.svg" alt="Filter">
-                                <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg6dark.svg" alt="Filter">
-                            </span>
-                            <span class="text-sm leading-tight tracking-normal">Filter</span>
-                        </div>
-                        <div class="absolute text-gray-600 dark:text-gray-400 flex items-center pl-3 h-full">
-                            <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg7.svg" alt="search">
-                            <img class="dark:block hidden" src="../svgs/svg7dark.svg" alt="search">
-                        </div>
-                        <label for="search" class="hidden text-gray-800 text-sm font-bold leading-tight tracking-normal mb-2"></label>
-                        <input  id="search" class="w-full text-gray-600 bg-transparent dark:bg-gray-800 dark:text-gray-400 focus:outline-none focus:border focus:border-indigo-700 font-normal pl-8 pr-24 h-10 flex items-center text-sm border-gray-300 dark:border-gray-200 rounded border" placeholder="Search by project name or owner" />
-                    </div>
-                </div>
+                <x-inputs.search-bar/>
             </div>
         </div>
         <div class="w-full overflow-x-scroll xl:overflow-x-hidden">

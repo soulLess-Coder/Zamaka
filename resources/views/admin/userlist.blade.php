@@ -3,7 +3,7 @@
 @section('content')
 <x-admin-sidebar>
     <div class="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
-        
+
         <div class="w-full overflow-x-scroll xl:overflow-x-hidden">
             <table class="min-w-full bg-white dark:bg-gray-800 rounded">
                 <thead>
@@ -15,7 +15,7 @@
                         <th role="columnheader" class="text-gray-600 font-normal pr-6 text-left text-sm tracking-normal leading-4">Phone Number</th>
                         <th role="columnheader" class="text-gray-600 font-normal pr-6 text-left text-sm tracking-normal leading-4">Email</th>
                         <th role="columnheader" class="text-gray-600 font-normal pr-6 text-left text-sm tracking-normal leading-4">Action</th>
-                        
+
                         <td class="pr-8">
                             <button class="w-32 opacity-0 bg-gray-100 transition duration-150 ease-in-out focus:outline-none focus:border-gray-800 focus:shadow-outline-gray hover:bg-gray-300 rounded text-indigo-700 px-5 py-1 text-sm cursor-default">Start Session</button>
                         </td>
@@ -57,7 +57,7 @@
                             <button class="bg-gray-100 transition duration-150 ease-in-out border border-transparent focus:outline-none focus:border-gray-800 focus:shadow-outline-gray hover:bg-gray-300 rounded text-indigo-700 px-5 py-1 text-sm">Start Session</button>
                         </td>
                     </tr>
-                    
+
 
 
                     <tr role="row" class="h-24 border-gray-300 border-t border-b hover:border-indigo-300 hover:shadow-md cursor-pointer transition duration-150 ease-in-out">
@@ -98,21 +98,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
-    <div class="mx-auto container pt-8 flex justify-center sm:justify-end items-center">
-        <a class="mr-2 sm:mr-5 rounded border border-transparent focus:outline-none focus:border-gray-800 text-gray-600 focus:shadow-outline-gray" aria-label="Previous Page" role="link" href="javascript: void(0)">
-            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters_search_and_two_level_action_buttons-svg7.svg" alt="Previous">
-        </a>
-        <p class="text-gray-800 dark:text-gray-100 fot-normal text-base">Page</p>
-        <label for="selectedPage" class="hidden"></label>
-        <input placeholder="0" id="selectedPage" type="text" class="bg-white dark:bg-gray-800 w-8 px-2 mx-2 text-gray-800 dark:text-gray-100 focus:outline-none focus:shadow-outline-gray focus:border focus:border-indigo-700 font-normal flex items-center text-base border-gray-300 rounded border" value="4" />
-        <p class="text-gray-800 dark:text-gray-100 fot-normal text-base">of 20</p>
-        <a class="mx-2 sm:mx-5 rounded border border-transparent focus:outline-none focus:border-gray-800 text-gray-600 focus:shadow-outline-gray" aria-label="Next Page" role="link" href="javascript: void(0)">
-            <img class="transform rotate-180" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters_search_and_two_level_action_buttons-svg7.svg" alt="Previous">
-        </a>
-        <label for="totalPage" class="hidden"></label>
-        <input placeholder="0" id="totalPage" type="text" class="bg-white dark:bg-gray-800 w-10 px-2 mr-2 text-gray-800 dark:text-gray-100 focus:outline-none focus:shadow-outline-gray focus:border focus:border-indigo-700 font-normal flex items-center text-base border-gray-300 rounded border" value="30" />
-        <p class="-mt-1 text-gray-800 dark:text-gray-100 fot-normal text-base">per page</p>
     </div>
 </x-admin-sidebar>
 @endsection

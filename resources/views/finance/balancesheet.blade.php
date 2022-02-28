@@ -4,7 +4,7 @@
     <x-admin-sidebar>
         <div class="overflow-x-auto">
             <table class="table w-full">
-
+                <p class="font-bold">Balance Sheet</p>
               <thead>
                 <tr>
 

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-admin-sidebar/>
+<x-admin-sidebar>
     <div class="pt-16">
         <button id="button" onclick="modalHandler(true)" class="px-10 py-2 text-white bg-indigo-600 rounded focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none hover:bg-indigo-700">Open Modal</button>
     </div>
@@ -120,17 +120,15 @@
             </div>
         </div>
         <div class="items-center justify-between p-3 md:p-6 sm:flex">
-            <div class="p-3 bg-indigo-100 rounded">
+            <div class="p-3 bg-red-100 rounded">
                 <div tabindex="0" aria-label="copy link" class="flex items-center focus:outline-none">
-                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/modal_13-svg5.svg" alt="attach"/>
-
-                    <input class="w-40 pl-3 pr-4 text-xs leading-3 text-indigo-700 border-none"></p>
-                    <p class="pl-3 text-xs font-semibold leading-3 text-indigo-700 cursor-pointer">Search</p>
+                    <x-inputs.search-bar/>
                 </div>
             </div>
             <div class="flex justify-end w-full mt-6 sm:block sm:w-auto sm:mt-0">
-                <button class="px-6 py-3 text-xs font-semibold leading-3 text-white bg-indigo-700 rounded focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 focus:outline-none hover:bg-indigo-600">Done</button>
+                <button class="px-6 py-3 text-xs font-semibold leading-3 text-white bg-red-500 rounded focus:ring-2 focus:ring-offset-2 focus:ring-red-500 focus:outline-none hover:bg-red-500">Done</button>
             </div>
         </div>
     </div>
+</x-admin-sidebar>
 @endsection

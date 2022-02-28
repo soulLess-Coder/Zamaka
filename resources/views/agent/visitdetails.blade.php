@@ -19,21 +19,7 @@
             <div class="w-full md:w-2/3 flex flex-col md:flex-row items-start md:items-center justify-end">
 
                 <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-0">
-                    <div class="relative w-full">
-                        <div aria-hidden="true" class="absolute cursor-pointer text-gray-600 dark:text-gray-400 flex items-center pr-3 right-0 border-l h-full">
-                            <span class="ml-2 mr-1">
-                                <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg6.svg" alt="Filter">
-                                <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg6dark.svg" alt="Filter">
-                            </span>
-                            <span class="text-sm leading-tight tracking-normal">Filter</span>
-                        </div>
-                        <div class="absolute text-gray-600 dark:text-gray-400 flex items-center pl-3 h-full">
-                            <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/advance_table_with_filters%2C_actions%2C_search%2C_sort_and_expanded_row-svg7.svg" alt="search">
-                            <img class="dark:block hidden" src="../svgs/svg7dark.svg" alt="search">
-                        </div>
-                        <label for="search" class="hidden text-gray-800 text-sm font-bold leading-tight tracking-normal mb-2"></label>
-                        <input  id="search" class="w-full text-gray-600 bg-transparent dark:bg-gray-800 dark:text-gray-400 focus:outline-none focus:border focus:border-indigo-700 font-normal pl-8 pr-24 h-10 flex items-center text-sm border-gray-300 dark:border-gray-200 rounded border" placeholder="Search by project name or owner" />
-                    </div>
+                    <x-inputs.search-bar/>
                 </div>
             </div>
         </div>
@@ -158,25 +144,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="cursor-pointer text-sm leading-3 tracking-normal flex items-center justify-center">
-                                        <a class="p-3 border text-gray-800 dark:text-gray-100 border-transparent hover:text-indigo-700 focus:bg-indigo-700 focus:text-white" href="javascript:void(0)">
-                                            <svg aria-label="Option 3" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z"></path>
-                                                <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
-                                                <circle cx="12" cy="12" r="9"></circle>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="cursor-pointer text-sm leading-3 tracking-normal flex items-center justify-center">
-                                        <a class="p-3 border text-gray-800 dark:text-gray-100 border-transparent hover:text-indigo-700 focus:bg-indigo-700 focus:text-white" href="javascript:void(0)">
-                                            <svg aria-label="Option 4" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z"></path>
-                                                <polyline points="7 8 3 12 7 16"></polyline>
-                                                <polyline points="17 8 21 12 17 16"></polyline>
-                                                <line x1="14" y1="4" x2="10" y2="20"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
+
                                 </ul>
                                 <div class="w-full bg-white border-l border-gray-300 dark:bg-gray-800">
                                     <h4 class="pl-10 w-full text-sm text-gray-800 dark:text-gray-100 py-3 bg-gray-100 dark:bg-gray-700">Property Details</h4>

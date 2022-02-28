@@ -92,11 +92,10 @@
                         <td>Total</td>
                         <td>0.00</td>
                         <td>Total</td>
-                        <td>0.00/td>
+                        <td>0.00</td>
                     </tr>
                 </tbody>
             </table>
           </div>
     </x-admin-sidebar>
 @endsection
-
