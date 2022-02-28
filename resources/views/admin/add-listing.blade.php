@@ -65,7 +65,19 @@
     </div>
 
 
-    <div class="mb-4 lg:col-span-2 xl:col-span-2" >
+    <div class="mb-4 " >
+        <p class="p-2 font-bold"> Owner</Address></p>
+
+        <input name="Address" id="Street" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+        @error('Address') border-red-500 @enderror" value="{{ old('Address') }}">
+
+        @error('phone_number')
+            <div class="mt-2 text-sm text-red-500">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+    <div class="mb-4 " >
         <p class="p-2 font-bold"> Address</Address></p>
 
         <input name="Address" id="Street" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
@@ -77,6 +89,7 @@
             </div>
         @enderror
     </div>
+
 
 
 
@@ -166,6 +179,7 @@
             @enderror
         </div>
 
+
             <div class="mb-4 lg:col-span-2">
 
                 <span class="inline-grid "><p class="p-2 font-bold"> Price </Address></p></span>
@@ -177,7 +191,23 @@
                         </div>
                         @enderror
                     </span>
+
+
+         <div class="mb-4">
+            <p class="p-2 font-bold"> Add photos</Address></p>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </div>
+        <div class="mb-4">
+            <p class="p-2 font-bold"> Add Videos</Address></p>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </div>
             </div>
+
+
+
+
 
             <div class="w-32 h-32 p-4 mb-4">
                 <label class="block mb-2 text-sm font-bold text-gray-700" for="submit">
