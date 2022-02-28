@@ -80,6 +80,17 @@ Route::get('/payment', function () {
 
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 
+Route::get('/admin', function () {
+    return view('admin.admin-dashboard');
+});
+
+Route::get('/tenant/details', function () {
+    return view('tenant.listing-details');
+});
+
+Route::get('/career', function () {
+    return view('admin.addagent');
+});
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');

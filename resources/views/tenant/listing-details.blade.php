@@ -34,7 +34,7 @@
             <div class="carousel-inner relative w-full overflow-hidden">
               <div class="carousel-item active float-left w-full">
                 <img
-                  src="/dist/assets/old house.png"
+                  src="/images/old house.png"
                   class="block w-full"
                   alt="Wild Landscape"
                 />
@@ -81,7 +81,7 @@
                 <li class="justify-self-center">
                     <a href="">
                         <span>
-                            <img class="scale-50" src="/dist/icons/location.png" alt="location">
+                            <img class="scale-50" src="/images/location.png" alt="location">
                         </span>
                     </a>
                 </li>
@@ -100,7 +100,7 @@
                             <p>Area</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon resize.png" alt="area">
+                            <img class="mr-6" src="/images/resize.png" alt="area">
                             <p>200sq</p>
                         </li>
                     </ul>
@@ -109,7 +109,7 @@
                             <p>Bath</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon bathtub.png" alt="bathtub">
+                            <img class="mr-6" src="/images/bathtub.png" alt="bathtub">
                             <p>3</p>
                         </li>
                     </ul>
@@ -118,7 +118,7 @@
                             <p>Bed</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon bed.png" alt="Bed">
+                            <img class="mr-6" src="/images/bed.png" alt="Bed">
                             <p>3</p>
                         </li>
                     </ul>
@@ -127,7 +127,7 @@
                             <p>Calendar</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon calendar.png" alt="calander">
+                            <img class="mr-6" src="/images/calendar.png" alt="calander">
                             <p>2021</p>
                         </li>
                     </ul>
@@ -136,7 +136,7 @@
                             <p>Rent</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon cash.png" alt="cash">
+                            <img class="mr-6" src="/images/cash.png" alt="cash">
                             <p>30k</p>
                         </li>
                     </ul>
@@ -145,7 +145,7 @@
                             <p>Allama Iqbal</p>
                         </li>
                         <li class="flex flex-row items-center">
-                            <img class="mr-6" src="/dist/icons/sicon location.png" alt="location">
+                            <img class="mr-6" src="/images/location.png" alt="location">
                             <p></p>
                         </li>
                     </ul>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="collapse mt-4 overflow-y-auto justify-center" id="collapseWithScrollbar">
-                        <img src="/dist/assets/house.png" alt="House">
+                        <img src="/images/house.png" alt="House">
                     </div>
                 </div>
                 <div> <!--Section 2-->
@@ -198,13 +198,13 @@
                         </div>
                     </div>
                     <div class="collapse mt-4 overflow-y-auto justify-center" id="collapseWithScrollbar2">
-                        <img src="/dist/assets/map.png" alt="House">
+                        <img src="/images/map.png" alt="House">
                     </div>
                 </div>
                 <div> <!--Location-->
                     <h1 class="text-3xl font-bold">Location</h1>
                     <div class="m-20"> <!--map-->
-                        <img src="/dist/assets/map.png" alt="map">
+                        <img src="/images/map.png" alt="map">
                     </div>
                 </div>
                 <div> <!--Buttons-->

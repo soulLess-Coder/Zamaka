@@ -8,9 +8,11 @@
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
         <title>Zamaka</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Fonts SEN from google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" crossorigin="anonymous" rel="stylesheet">
     </head>
     <body class="">
-
         <x-header/>
         @yield('content')
         <x-footer/>
