@@ -11,10 +11,6 @@
         <i class="mr-1 text-xs fad fa-inbox-in"></i>
         Change Password
     </a>
-    <a class="block px-4 py-2 text-sm font-medium tracking-wide capitalize transition-all duration-300 ease-in-out bg-white hover:bg-gray-200 hover:text-gray-900" href="{{ route('/tenant/request') }}">
-        <i class="mr-1 text-xs fad fa-inbox-in"></i>
-        House Detail
-    </a>
     <!-- end item -->
     <hr>
 
