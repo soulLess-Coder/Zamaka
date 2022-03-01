@@ -46,7 +46,7 @@
                             <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
                             <circle cx="12" cy="12" r="9"></circle>
                         </svg>
-                        <span class="text-sm ml-2">Auth Property</span>
+                        <span class="text-sm ml-2">Verify Property</span>
                     </a>
                 </li>
 

@@ -4,7 +4,7 @@
 <x-admin-sidebar>
 <div class="flex items-center justify-center sm:h-screen">
     <div class="grid grid-cols-1 gap-5 my-auto">
-      <h2 class=""><b class="text-3xl">Maintanance</b></h2>
+      <h2 class=""><b class="text-3xl">Maintenance</b></h2>
       <div class="flex justify-center">
         <p><b>Explain your issuse so we can help you  we are always there to help</b></p>
       </div>

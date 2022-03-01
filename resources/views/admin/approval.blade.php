@@ -44,7 +44,7 @@
                                 </td>
                                 <td>
                                     <div class="flex items-center justify-center w-20 h-6  rounded-full">
-                                        <p>Confirm Order</p>
+                                        <p class="underline">Confirm <p class="underline">/Decline</p></p>
                                     </div>
                                 </td>
                             </tr>
