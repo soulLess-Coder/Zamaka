@@ -1,138 +1,38 @@
 @extends('layouts.owner')
 
 @section('content')
+
+
 <x-owner-sidebar>
-    <div class="overflow-x-auto w-full">
-        <table class="table w-full">
-            <!-- head -->
-            <thead>
-            <tr>
-                <th>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                </label>
-                </th>
-                <th>Image</th>
-                <th>Date</th>
-                <th>User Id</th>
-                <th>Property Id</th>
-                <th>Full Name</th>
-                <th>Status</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Category</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- row 1 -->
-            <tr>
-                <th>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                </label>
-                </th>
-                <td>
-                <div class="flex items-center space-x-3">
-                    <div class="avatar">
-                    <div class="w-16 h-16">
-                        <img src="" alt="Receipt Image">
-                    </div>
-                    </div>
-                    <div>
-                  
-                </div>
-                </td>
-                <td>01/12/2012</td>
-                <td>Purple</td>
-                <td>
-                Zemlak, Daniel and Leannon
-                <br>
-                <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                </td>
-            </tr>
-            <!-- row 2 -->
-            <tr>
-                <th>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                </label>
-                </th>
-                <td>
-                <div class="flex items-center space-x-3">
-                    <div class="avatar">
-                    <div class="w-12 h-12 mask mask-squircle">
-                        <img src="/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component">
-                    </div>
-                    </div>
-                </div>
-                </td>
-                <td>
-                Carroll Group
-                <br>
-                <span class="badge badge-ghost badge-sm">Tax Accountant</span>
-                </td>
-                <td>Red</td>
-                <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-                </th>
-            </tr>
-            <!-- row 3 -->
-            <tr>
-                <th>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                </label>
-                </th>
-                <td>
-                <div class="flex items-center space-x-3">
-                    <div class="avatar">
-                    <div class="w-12 h-12 mask mask-squircle">
-                        <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component">
-                    </div>
-                    </div>
-                </div>
-                </td>
-                <td>
-                Rowe-Schoen
-                <br>
-                <span class="badge badge-ghost badge-sm">Office Assistant I</span>
-                </td>
-                <td>Crimson</td>
-                <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-                </th>
-            </tr>
-            <!-- row 4 -->
-            <tr>
-                <th>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                </label>
-                </th>
-                <td>
-                <div class="flex items-center space-x-3">
-                    <div class="avatar">
-                    <div class="w-12 h-12 mask mask-squircle">
-                        <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component">
-                    </div>
-                    </div>
-                </div>
-                </td>
-                <td>
-                Wyman-Ledner
-                <br>
-                <span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
-                </td>
-                <td>Indigo</td>
-                <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-                </th>
-            </tr>
-            </tbody>
-            <!-- foot -->
-            <tfoot>
-            </tfoot>
-        </table>
-    </div>
+
+    <div class="bg-white shadow xl:w-3/4 2xl:w-4/5 w-full px-6 sm:px-12 py-5 sm:py-10">
+        <div class="mb-5 sm:mb-10 rounded-tl-lg rounded-tr-lg">
+            <div class="sm:flex items-center justify-between">
+                <p tabindex="0" class="focus:outline-none text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">Maintenance Details</p>
+        </div>
+        <div class="">
+            <div class="w-full overflow-x-auto">
+                <table class="w-full whitespace-nowrap">
+                    <thead>
+                        <tr class="h-20 w-full text-sm leading-none text-gray-600">
+                            <th tabindex="0" class="focus:outline-none font-normal text-left pl-4">Date</th>
+                            <th tabindex="0" class="focus:outline-none font-normal text-left pl-10">User Id</th>
+                            <th tabindex="0" class="focus:outline-none font-normal text-left pl-10">Property Id</th>
+                            <th tabindex="0" class="focus:outline-none font-normal text-left pl-10">Transaction Id</th>
+                            <th tabindex="0" class="focus:outline-none font-normal text-left pl-10">Maintenance Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-full">
+                        <tr class="h-20 text-sm leading-none text-gray-700 border-b border-t border-gray-200 bg-white hover:bg-gray-100">
+                            <td tabindex="0" class="focus:outline-none pl-4"> 21/12/2021</td>
+                            <td tabindex="0" class="focus:outline-none pl-10"> 125</td>
+                            <td tabindex="0" class="focus:outline-none pl-10">
+                                457
+                            </td>
+                            <td tabindex="0" class="focus:outline-none pl-10">
+                                540
+                            </td>
+                            <td tabindex="0" class="focus:outline-none pl-10">Rs 2000</td>
+                        </tr>
 </x-owner-sidebar>
-@endsection      
+@endsection
