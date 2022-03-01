@@ -39,7 +39,7 @@ Route::get('/tenant', function () {
 });
 Route::get('/tenant/request', function () {
     return view('tenant.housedetail');
-});
+})->name('housedetails');
 
 Route::get('/tenant/housedetails', function () {
     return view('tenant.maintenance_request');
