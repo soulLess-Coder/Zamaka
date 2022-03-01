@@ -38,8 +38,13 @@ Route::get('/tenant', function () {
     return view('tenant.index');
 });
 Route::get('/tenant/request', function () {
+    return view('tenant.housedetail');
+});
+
+Route::get('/tenant/housedetails', function () {
     return view('tenant.maintenance_request');
 });
+
 //Admin Routes
 Route::get('/admin/userlist', function () { //C
     return view('admin.userlist');

@@ -44,7 +44,6 @@
               <a href="{{ route('listings') }}" class="px-3 py-2 text-sm font-medium text-white bg-red-500 rounded-md hover:font-bold" aria-current="page">Listings</a>
 
               <a href="/career" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-red-500 hover:text-white">Career</a>
-              <a href="#" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-red-500 hover:text-white">About Us</a>
               <a href="{{ route('complaint') }}" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-red-500 hover:text-white">Complaints</a>
             </div>
           </div>

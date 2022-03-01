@@ -36,7 +36,11 @@ class RegisterController extends Controller
 
         //sign user in
         Auth::attempt($request->only('email', 'password'));
-
+        $role=Auth::user()->role;
+        if($role == "Owner"){
+            return redirect()->route('owner');
+        }
+        
         return redirect()->route('listings');
     }
     //redirect
