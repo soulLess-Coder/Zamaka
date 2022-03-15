@@ -123,8 +123,8 @@ Route::get('/tenant', function () {
 
 
 Route::get('/', function () {
-    return view('tenant.listings');
-});
+    return view('index');
+})->name('home');
 
 Route::get('/compare', [ComparisionController::class, 'index'])->name('compare');
 
