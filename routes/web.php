@@ -91,7 +91,9 @@ Route::get('/payment', function () {
     return view('tenant.payment');
 });
 
-Route::get('/listings', [ListingController::class, 'index'])->name('listings');
+Route::get('/listings', function (){
+    return view('tenant.listings');
+})->name('listings');
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');

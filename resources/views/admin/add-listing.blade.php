@@ -37,30 +37,16 @@
 
 
     <div class="mb-4">
-        <p class="p-2 font-bold"> Sector/Mohala</p>
-        <label for="Area" class="sr-only">Area</label>
-        <input type="text" name="Area" id="Area" placeholder="Sector/Mohala" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('Area') border-red-500 @enderror" value="{{ old('Area ') }}">
+        <p class="p-2 font-bold"> Sector</p>
+        <label for="sector" class="sr-only">Sector</label>
+        <input type="text" name="sector" id="sector" placeholder="sector" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('sector') border-red-500 @enderror" value="{{ old('sector') }}">
 
-        @error('phone_number')
+        @error('sector')
             <div class="mt-2 text-sm text-red-500">
                 {{ $message }}
             </div>
         @enderror
     </div>
-
-
-    <div class="mb-4">
-        <p class="p-2 font-bold"> Landmark</p>
-        <label for="Area" class="sr-only">Area</label>
-        <input type="text" name="Area" id="Area" placeholder="Area" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('Area') border-red-500 @enderror" value="{{ old('Area ') }}">
-
-        @error('phone_number')
-            <div class="mt-2 text-sm text-red-500">
-                {{ $message }}
-            </div>
-        @enderror
-    </div>
-
 
 
     <div class="mb-4">
@@ -80,18 +66,7 @@
 
 
     <div class="mb-4 " >
-        <p class="p-2 font-bold">Owner CNIC</Address></p>
-        <input name="Address" id="Street" placeholder="36547-XXXXXXX-X" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
-        @error('Address') border-red-500 @enderror" value="{{ old('Address') }}">
-
-        @error('phone_number')
-            <div class="mt-2 text-sm text-red-500">
-                {{ $message }}
-            </div>
-        @enderror
-    </div>
-    <div class="mb-4 " >
-        <p class="p-2 font-bold"> Address</Address></p>
+        <p class="p-2 font-bold"> Owner</p>
 
         <input name="Address" id="Street" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
         @error('Address') border-red-500 @enderror" value="{{ old('Address') }}">
@@ -102,26 +77,11 @@
             </div>
         @enderror
     </div>
+    <div class="mb-4" >
+        <p class="p-2 font-bold"> Address</p>
 
-    <div class="mb-4" lg:col-span-2>
-        <p class="p-2 font-bold"> Description</p>
-        <label for="Area" class="sr-only">Detail of Property</label>
-        <input type="text" name="Area" id="Area" placeholder="Description" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('Area') border-red-500 @enderror" value="{{ old('Area ') }}">
-
-        @error('phone_number')
-            <div class="mt-2 text-sm text-red-500">
-                {{ $message }}
-            </div>
-        @enderror
-    </div>
-    <div class="mb-4">
-        <p class="p-2 font-bold">Category</p>
-        <select type="text" name="City" id="City" placeholder="Type" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('City') border-red-500 @enderror" value="{{ old('City ') }}">
-            <option>Agriculture</option>
-            <option>Industrial</option>
-            <option>Commercial</option>
-            <option>Residential</option>
-        </select>
+        <input name="Address" id="Street" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+        @error('Address') border-red-500 @enderror" value="{{ old('Address') }}">
 
         @error('phone_number')
             <div class="mt-2 text-sm text-red-500">
@@ -129,9 +89,6 @@
             </div>
         @enderror
     </div>
-
-
-
 
 
 
