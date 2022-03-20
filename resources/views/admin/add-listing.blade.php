@@ -50,6 +50,20 @@
 
 
     <div class="mb-4">
+        <p class="p-2 font-bold"> Landmark</p>
+        <label for="Area" class="sr-only">Area</label>
+        <input type="text" name="Area" id="Area" placeholder="Area" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('Area') border-red-500 @enderror" value="{{ old('Area ') }}">
+
+        @error('phone_number')
+            <div class="mt-2 text-sm text-red-500">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+
+
+
+    <div class="mb-4">
         <p class="p-2 font-bold"> City</p>
         <label for="City" class="sr-only">City </label>
         <select type="text" name="City" id="City" placeholder="Your City" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('City') border-red-500 @enderror" value="{{ old('City ') }}">
@@ -89,6 +103,21 @@
             </div>
         @enderror
     </div>
+
+    <div class="mb-4" lg:col-span-2>
+        <p class="p-2 font-bold"> description</p>
+        <label for="Area" class="sr-only">Area</label>
+        <input type="text" name="Area" id="Area" placeholder="deascroption" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('Area') border-red-500 @enderror" value="{{ old('Area ') }}">
+
+        @error('phone_number')
+            <div class="mt-2 text-sm text-red-500">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+
+
+
 
 
 
