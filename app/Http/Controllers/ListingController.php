@@ -26,7 +26,23 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        //TODO:Insert validation here
+         //validation
+         $this->validate($request, [
+
+            'description' => 'required|max:100',
+            'landmarks' => 'required',
+            'property_size'=> 'required',
+            'image'=> 'required|image',
+            'video'=> 'required|mimes:mp4,mkv,webm',
+            'lease_price'=> 'required|min:10|numeric',
+            'build_year'=> 'required|digit:4',
+            'street' => 'required',
+            'house_number'=> 'required',
+            'sector',
+            'mohala',
+            'city'=>'required'
+
+        ]);
 
         return Property::create($request->all());
     }
