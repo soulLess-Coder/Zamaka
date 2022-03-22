@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Address;
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ListingController;
 /*
 |--------------------------------------------------------------------------
@@ -16,24 +17,23 @@ use App\Http\Controllers\ListingController;
 |
 */
 
-Route::get('/listings', [ListingController::class, 'index']);
-Route::post('/listings', [ListingController::class, 'store']);
-//    Address::create([
-//
-//    ]);
-//
-//    return Property::create([
-//        'description' => "Great Property. Good Location",
-//        'landmarks' => "Faisal Mosque",
-//        'property_size' => "2 sq km",
-//        'image' => "Image path",
-//        'video' => "video path",
-//        'lease_price' => 200.32965,
-//        'build_year' => 2011
-//    ]);
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
+], function ($router) {
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/refresh', [AuthController::class, 'refresh']);
+    Route::get('/user-profile', [AuthController::class, 'userProfile']);
+});
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//TODO: Protect this with later with Auth
+Route::get('/listings', [ListingController::class, 'index'])->name('listings');
+Route::middleware('auth')->post('/listings', [ListingController::class, 'store']);
+
+Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
 

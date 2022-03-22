@@ -20,25 +20,25 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
-        if(!Auth::attempt($request->only('email', 'password'))){
-            return back() -> with('status', 'Invalid email or password');
+        if(! $token = Auth::attempt($request->only('email', 'password'))){
+            return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        $role = Auth::user()->role;
-        switch($role){
-            case "Owner":
-                return redirect('owner');
-                break;
-            case "Tenant":
-                return redirect()->route('listings');
-                break;
-            case "Admin":
-                return redirect()->route('admin');
-                break;
-            case "Agent":
-                return redirect()->route('agent');
-                break;
-        }
-        return redirect()->route('listings');
+//        $role = Auth::user()->role;
+//        switch($role){
+//            case "Owner":
+//                return redirect('owner');
+//                break;
+//            case "Tenant":
+//                return redirect()->route('listings');
+//                break;
+//            case "Admin":
+//                return redirect()->route('admin');
+//                break;
+//            case "Agent":
+//                return redirect()->route('agent');
+//                break;
+//        }
+        return $this->createNewToken($token);
     }
 }

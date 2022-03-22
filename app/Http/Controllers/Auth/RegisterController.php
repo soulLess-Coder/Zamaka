@@ -25,6 +25,7 @@ class RegisterController extends Controller
             'password' => 'required|confirmed',
             'role' => 'required'
         ]);
+
         //store user
         User::create([
             'name' => $request->name,
@@ -40,7 +41,7 @@ class RegisterController extends Controller
         if($role == "Owner"){
             return redirect()->route('owner');
         }
-        
+
         return redirect()->route('listings');
     }
     //redirect
