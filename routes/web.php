@@ -9,6 +9,7 @@ use App\Http\Controllers\ListingController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\resetController;
 use App\Http\Controllers\PropertyDetailsController;
+use App\Http\Controllers\View\DisplayListingsController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -91,9 +92,7 @@ Route::get('/payment', function () {
     return view('tenant.payment');
 });
 
-Route::get('/listings', function (){
-    return view('tenant.listings');
-})->name('listings');
+Route::get('/listings', [DisplayListingsController::class, 'index'])->name('listings');
 
 Route::get('/admin', function () {
     return view('admin.admin-dashboard');

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <?php /** @var TYPE_NAME $listings*/?>
         <div> <!--Body-->
             <div> <!--Filter-->
                 <div class="text-xl sm:text-2xl md:text-4xl text-center font-bold font-sen">Filter Search</div> <!--Lable-->
@@ -8,6 +9,9 @@
                     <div class="flex  items-center justify-between justify-items-center"> <!--Filters-->
                         <!--bed-->
                         <div>
+                            @foreach($property as $listings)
+                                <x-property-card
+                            @endforeach
                             <span class="flex items-center">
                                 <img class="w-5 h-5 px-4 sm:w-auto sm:h-auto" src="./images/bed.png" alt="bed">
                                 <input type="number" title="bed" placeholder="beds" class="w-20 shadow-sm shadow-zamaka/20"/>

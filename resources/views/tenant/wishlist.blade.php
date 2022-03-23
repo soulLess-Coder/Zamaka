@@ -2,6 +2,7 @@
 
 @section('content')
         <div> <!--Body-->
+            @dd(\Illuminate\Support\Facades\Auth::user())
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center mx-10 gap-y-10 "> <!--List of Products-->
                 <div class="flex mx-14 sm:w-64 md:w-60 lg:w-72"> <!--Product-->
                     <div class="flex flex-col p-2 rounded-xl shadow-lg shadow-zamaka/50 gap-2"> <!--frame-->
