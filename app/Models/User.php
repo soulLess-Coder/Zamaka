@@ -57,6 +57,9 @@ class User extends Authenticatable implements JWTSubject
      *
      * @return array
      */
+    public function wishlist(){
+        return $this->hasMany(Wishlist::class);
+     }
     public function getJWTCustomClaims() {
         return [
             'role' => [

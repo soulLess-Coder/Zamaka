@@ -31,4 +31,7 @@ class Property extends Model
     protected $attributes = [
         'category_id' => 1,
     ];
+    public function wishlist(){
+        return $this->hasMany(Wishlist::class);
+     }
 }

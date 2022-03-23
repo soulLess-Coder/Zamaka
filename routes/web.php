@@ -41,6 +41,8 @@ Route::get('/tenant/request', function () {
     return view('tenant.housedetail');
 })->name('housedetails');
 
+Route::resource('/wishlist', 'WishlistController', ['except' => ['create', 'edit', 'show', 'update']]);
+
 Route::get('/tenant/housedetails', function () {
     return view('tenant.maintenance_request');
 });
