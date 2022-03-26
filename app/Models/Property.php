@@ -10,8 +10,6 @@ class Property extends Model
 {
     use HasFactory;
 
-    protected Address $address;
-
     protected $fillable = [
         'description',
         'landmarks',

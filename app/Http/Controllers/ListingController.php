@@ -32,10 +32,10 @@ class ListingController extends Controller
             'description' => 'required|max:100',
             'landmarks' => 'required',
             'property_size'=> 'required',
-            'image'=> 'required|image',
-            'video'=> 'required|mimes:mp4,mkv,webm',
+            'image'=> 'required',
+            'video'=> 'required',
             'lease_price'=> 'required|min:10|numeric',
-            'build_year'=> 'required|digit:4',
+            'build_year'=> 'required',
             'street' => 'required',
             'house_number'=> 'required',
             'sector',
@@ -54,7 +54,6 @@ class ListingController extends Controller
      */
     public function show($id)
     {
-
         return Property::find($id);
     }
 
