@@ -28,7 +28,6 @@ class ListingController extends Controller
     {
          //validation
          $this->validate($request, [
-
             'description' => 'required|max:100',
             'landmarks' => 'required',
             'property_size'=> 'required',
