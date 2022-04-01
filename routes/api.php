@@ -18,7 +18,7 @@ use App\Http\Controllers\ListingController;
 */
 
 Route::group([
-    'middleware' => 'api',
+    'middleware' => 'auth:api',
     'prefix' => 'auth'
 ], function ($router) {
     Route::post('/login', [AuthController::class, 'login']);
@@ -36,8 +36,4 @@ Route::middleware('auth')->post('/listings', [ListingController::class, 'store']
 Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-
-
-
 
