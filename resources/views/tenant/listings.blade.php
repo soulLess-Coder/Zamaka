@@ -41,8 +41,9 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center mx-10 gap-y-10 "> <!--List of Products-->
-                @foreach($property as $listings)
-                    <x-property-card>
+                @foreach($listings as $property)
+
+                    <x-property-card :house-number="$property->house_number">
 
                     </x-property-card>
                 @endforeach

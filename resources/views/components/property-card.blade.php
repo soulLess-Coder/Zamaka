@@ -9,10 +9,10 @@
                 <div class="w-2 h-2 bg-gray-500 rounded-full mx-1"></div>
                 <div class="w-2 h-2 bg-gray-500 rounded-full mx-1"></div>
             </div>
-        </div>
+        </div> <!--end image slider-->
         <a href="/tenant/details">
             <div class="text-md font-bold"> <!--Address-->
-                {{ $house_number }}, {{ $street }}, {{ $sector }}
+                {{ $houseNumber }}
             </div>
         </a>
         <div class="flex flex-wrap justify-between text-sm items-center gap-2"> <!--Specs-->

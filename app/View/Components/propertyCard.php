@@ -11,10 +11,11 @@ class propertyCard extends Component
      *
      * @return void
      */
-    public function __construct($description, $house_number)
+
+    public $houseNumber;
+    public function __construct($houseNumber)
     {
-        $this->description = $description;
-        $this->house_number = $house_number;
+        $this->houseNumber = $houseNumber;
     }
 
     /**
