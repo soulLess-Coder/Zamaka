@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Property;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
-class PropertySeeder extends Seeder
+class Categoryseeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class PropertySeeder extends Seeder
      */
     public function run()
     {
-        $property = Property::factory()->count(5)->create();
+        $category = Category::factory()->count(3)->create();
     }
 }
