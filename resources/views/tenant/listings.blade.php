@@ -6,7 +6,7 @@
             <div> <!--Filter-->
                 <div class="text-xl sm:text-2xl md:text-4xl text-center font-bold font-sen">Filter Search</div> <!--Lable-->
                 <div class="shadow-md shadow-zamaka/20 rounded-md grid items-center mx-5 my-5 sm:mx-20 sm:mb-10"> <!--Filters pan-->
-                    <div class="flex  items-center justify-between justify-items-center"> <!--Filters-->
+                    <div class="flex items-center justify-between justify-items-center"> <!--Filters-->
                         <!--bed-->
                         <div>
                             <span class="flex items-center">
