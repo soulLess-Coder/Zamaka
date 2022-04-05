@@ -16,10 +16,10 @@
                         </div>
                         <!--Bathtub-->
                         <div>
-                        <span class="flex items-center">
-                            <img class="w-5 h-5 px-4 sm:w-auto sm:h-auto" src="./images/bathtub.png" alt="Bathtub">
-                            <input type="number" title="bathtub" placeholder="bathtubs" class="w-20 shadow-sm shadow-zamaka/20"/>
-                        </span>
+                            <span class="flex items-center">
+                                <img class="w-5 h-5 px-4 sm:w-auto sm:h-auto" src="./images/bathtub.png" alt="Bathtub">
+                                <input type="number" title="bathtub" placeholder="bathtubs" class="w-20 shadow-sm shadow-zamaka/20"/>
+                            </span>
                         </div>
                         <!--resize-->
                         <span class="flex items-center">
@@ -44,6 +44,22 @@
                 @foreach($listings as $property)
 
                     <x-property-card :house-number="$property->house_number">
+
+                        <x-slot:size>
+                            {{$property->property_size}}
+                        </x-slot:size>
+
+                        <x-slot:build_year>
+                            {{$property->build_year}}
+                        </x-slot:build_year>
+
+                        <x-slot:price>
+                            {{$property->lease_price}}
+                        </x-slot:price>
+
+                        <x-slot:sector>
+                            {{$property->sector}}
+                        </x-slot:sector>
 
                     </x-property-card>
                 @endforeach
@@ -248,6 +264,5 @@
     $( ".property-card" ).click(function() {
         $( "#mobile-menu" ).toggle();
     });
-
 </script>
 @endsection

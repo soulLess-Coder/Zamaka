@@ -22,7 +22,7 @@
             </div>
             <div class="flex flex-row gap-1 items-center">
                 <img class="w-5 h-5 sm:w-6 sm:h-6" src="./images/resize.png" alt="resize">
-                <div>3 Marla</div>
+                <div>{{$size}}</div>
             </div>
             <div class="flex flex-row gap-1 items-center">
                 <img class="w-5 h-5 sm:w-6 sm:h-6" src="./images/bathtub.png" alt="bath">
@@ -30,15 +30,15 @@
             </div>
             <div class="flex flex-row gap-1 items-center">
                 <img class="w-5 h-5 sm:w-6 sm:h-6" src="./images/cash.png" alt="cash">
-                <div>30,000</div>
+                <div>{{$price}}</div>
             </div>
             <div class="flex flex-row gap-1 items-center">
                 <img class="w-5 h-5 sm:w-6 sm:h-6" src="./images/location.png" alt="location">
-                <div>Allama Iqbal Colony</div>
+                <div>{{$sector}}</div>
             </div>
             <div class="flex flex-row gap-1 items-center">
                 <img class="w-5 h-5 sm:w-6 sm:h-6" src="./images/calendar.png" alt="Date">
-                <div>2017</div>
+                <div>{{$build_year}}</div>
             </div>
         </div>
         <div> <!--Seperater-->
