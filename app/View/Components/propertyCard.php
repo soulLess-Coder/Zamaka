@@ -13,9 +13,13 @@ class propertyCard extends Component
      */
 
     public $houseNumber;
-    public function __construct($houseNumber)
+    public $street;
+    public $sector;
+    public function __construct($houseNumber, $street, $sector)
     {
         $this->houseNumber = $houseNumber;
+        $this->street = $street;
+        $this->sector = $sector;
     }
 
     /**
@@ -26,5 +30,10 @@ class propertyCard extends Component
     public function render()
     {
         return view('components.property-card');
+    }
+
+    public function makeAddress($houseNumber, $street, $sector){
+        $separator = ', ';
+        return $address = $houseNumber .= $separator .= $street .= $separator .= $sector;
     }
 }

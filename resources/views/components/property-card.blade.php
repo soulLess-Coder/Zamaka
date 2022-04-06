@@ -1,3 +1,7 @@
+@push('styles')
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+@endpush
+
 <div class="flex mx-14 sm:w-64 md:w-60 lg:w-72"> <!--Product-->
     <div class="flex flex-col p-2 rounded-xl shadow-lg shadow-zamaka/50 gap-2"> <!--frame-->
         <div class=""> <!--image slider-->
@@ -12,7 +16,7 @@
         </div> <!--end image slider-->
         <a href="/tenant/details">
             <div class="text-md font-bold"> <!--Address-->
-                {{ $houseNumber }}
+                {{ $makeAddress($houseNumber, $street, $sector) }}
             </div>
         </a>
         <div class="flex flex-wrap justify-between text-sm items-center gap-2"> <!--Specs-->

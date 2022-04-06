@@ -14,7 +14,8 @@
     </head>
     <body class="">
         <x-header/>
-        @yield('content')
+            @stack('styles')
+            @yield('content')
         <x-footer/>
         <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
     </body>
