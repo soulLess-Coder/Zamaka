@@ -17,4 +17,9 @@ class MaintenanceReport extends Model
         'video',
         'amount',
     ];
+
+    //TODO: remove this when we integrate things
+    protected $attributes = [
+        'property_id' => 1,
+    ];
 }

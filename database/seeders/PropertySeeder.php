@@ -14,6 +14,6 @@ class PropertySeeder extends Seeder
      */
     public function run()
     {
-        $property = Property::factory()->count(5)->create();
+        $property = Property::factory()->count(10)->create();
     }
 }

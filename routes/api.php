@@ -22,19 +22,19 @@ Route::group([
     'middleware' => 'auth:api',
     'prefix' => 'auth'
 ], function () {
-    Route::post('/login', [AuthController::class, 'login']);
-    Route::post('/register', [AuthController::class, 'register']);
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/user-profile', [AuthController::class, 'userProfile']);
 });
 
+Route::post('/auth/login', [AuthController::class, 'login']);
+Route::post('/auth/register', [AuthController::class, 'register']);
 
 //TODO: Protect this with later with Auth
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 Route::middleware('auth')->post('/listings', [ListingController::class, 'store']);
 
-Route::middleware('auth')->post('/maintenance_request', [MaintenanceReportController::class, 'store']);
+Route::middleware('auth')->post('/MaintenanceRequest', [MaintenanceReportController::class, 'store']);
 
 Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();

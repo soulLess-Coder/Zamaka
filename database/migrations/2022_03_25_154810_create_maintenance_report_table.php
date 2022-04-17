@@ -13,7 +13,7 @@ class CreateMaintenanceReportTable extends Migration
      */
     public function up()
     {
-        Schema::create('maintenance_report', function (Blueprint $table) {
+        Schema::create('maintenance_reports', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('property_id');
             $table->foreign('property_id')->references('id')->on('properties');
