@@ -19,7 +19,8 @@ class MaintenanceRequestController extends Controller
             'category',
             'image' => 'required|image',
             'contact_number' => 'required|numeric',
-            'amount'=> 'required',
+
+
         ]);
 
         $fileController = new FileController;
@@ -31,7 +32,7 @@ class MaintenanceRequestController extends Controller
                 'category'=>$request->category,
                 'image' => $image_path,
                 'contact_number' => $request->contact_number,
-                'amount' => $request->amount,
+
             ]
         );
     }

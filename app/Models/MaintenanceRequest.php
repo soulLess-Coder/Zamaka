@@ -14,7 +14,7 @@ class MaintenanceRequest extends Model
         'category',
         'image',
         'video',
-        'amount',
+
     ];
 
     //TODO: remove this when we integrate things
