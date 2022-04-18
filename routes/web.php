@@ -47,7 +47,7 @@ Route::get('/tenant/housedetails', function () {
 });
 
 //Admin Routes
-Route::get('/admin/userlist', function () { //C
+Route::get('/admin/userlist', function () {
     return view('admin.userlist');
 });
 
