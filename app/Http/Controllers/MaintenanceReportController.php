@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 
 use App\Models\MaintenanceReport;
+use App\Http\Controllers\FileController;
 use Illuminate\Http\Request;
 
 class MaintenanceReportController extends Controller
 {
+    //TODO: Remove this controller and copy paste its code to ListingController
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +28,28 @@ class MaintenanceReportController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //TODO:add more validations and various error handling (server,database etc)
+        $this->validate($request, [
+            'title' => 'required',
+            'description',
+            'category',
+            'image' => 'required|image',
+            'video'=> 'required',
+            'amount'=> 'required',
+        ]);
+
+        $fileController = new FileController;
+        $image_path = $fileController->storePropertyImages($request);
+        $video_path = $fileController->storeVideo($request);
+        return MaintenanceReport::create([
+            'title' => $request->title,
+                'description' => $request->description,
+                'category'=>$request->category,
+                'image' => $image_path,
+                'video' => $video_path,
+                'amount' => $request->amount,
+            ]
+        );
     }
 
     /**
