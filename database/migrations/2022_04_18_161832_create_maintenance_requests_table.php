@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMaintenanceReportTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateMaintenanceReportTable extends Migration
      */
     public function up()
     {
-        Schema::create('maintenance_reports', function (Blueprint $table) {
+        Schema::create('maintenance_requests', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('property_id');
             $table->foreign('property_id')->references('id')->on('properties');
@@ -21,7 +21,7 @@ class CreateMaintenanceReportTable extends Migration
             $table->string('description')->nullable();
             $table->string('category');
             $table->string('image');
-            $table->string('video');
+            $table->string('contact_number');
             $table->decimal('amount');
             $table->timestamps();
         });
@@ -34,6 +34,6 @@ class CreateMaintenanceReportTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('maintenance_report');
+        Schema::dropIfExists('maintenance_requests');
     }
-}
+};

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class MaintenanceReportController extends Controller
 {
+    //TODO: Remove this controller and copy paste its code to ListingController
     /**
      * Display a listing of the resource.
      *
@@ -36,6 +37,7 @@ class MaintenanceReportController extends Controller
             'video'=> 'required',
             'amount'=> 'required',
         ]);
+
         $fileController = new FileController;
         $image_path = $fileController->storePropertyImages($request);
         $video_path = $fileController->storeVideo($request);
