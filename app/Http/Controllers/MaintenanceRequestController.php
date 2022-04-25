@@ -30,7 +30,7 @@ class MaintenanceRequestController extends Controller
         ]);
 
         $fileController = new FileController;
-        $image_path = $fileController->storePropertyImages($request);
+        $image_path = $fileController->storeMaintenanceImages($request);
 
         return MaintenanceReport::create([
                 'title' => $request->title,

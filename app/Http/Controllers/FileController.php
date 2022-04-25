@@ -16,6 +16,14 @@ class FileController extends Controller
         return $image_path;
     }
 
+    public function storeMaintenanceImages(Request $request){
+
+        $uploadFolder = 'maintenanceImages';
+        $image = $request->file('image');
+        $image_path = $image->store($uploadFolder, 'public');
+        return $image_path;
+    }
+
     public function storePropertyImages(Request $request){
 
         $uploadFolder = 'propertyImages';
