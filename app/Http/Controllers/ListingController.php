@@ -40,6 +40,7 @@ class ListingController extends Controller
             'sector',
             'mohala',
             'city'=>'required'
+
         ]);
 
         return Property::create($request->all());

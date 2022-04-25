@@ -10,6 +10,7 @@ use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\resetController;
 use App\Http\Controllers\PropertyDetailsController;
 use App\Http\Controllers\View\DisplayListingsController;
+use App\Http\Controllers\View\DisplayMaintanceRequest;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -38,9 +39,8 @@ Route::get('/details', [PropertyDetailsController::class, 'index'])->name('detai
 Route::get('/tenant', function () {
     return view('tenant.index');
 });
-Route::get('/tenant/request', function () {
-    return view('tenant.housedetail');
-})->name('housedetails');
+
+Route::get('/tenant/request', [DisplayMaintanceRequest::class, 'index'])->name('Maintenance');
 
 Route::get('/tenant/housedetails', function () {
     return view('tenant.maintenance_request');

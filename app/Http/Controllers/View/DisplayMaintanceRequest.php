@@ -14,6 +14,6 @@ class DisplayMaintanceRequest extends Controller
         $request = Request::create('/api/MaintenanceRequest', 'GET');
         $response = app()->handle($request);
         $tablerow = json_decode($response->getContent());
-        return view('tenant.housedetail', ['tablerow' => $tablerow]);
+        return view('tenant.MaintenanceRequestPage',  compact('tablerow'));
     }
 }

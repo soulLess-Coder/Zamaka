@@ -10,6 +10,14 @@ use App\Models\MaintenanceRequest;
 
 class MaintenanceRequestController extends Controller
 {
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     * @noinspection PhpUndefinedMethodInspection
+     */
     public function store(Request $request)
     {
         //TODO:add more validations and various error handling (server,database etc)
@@ -19,8 +27,6 @@ class MaintenanceRequestController extends Controller
             'category',
             'image' => 'required|image',
             'contact_number' => 'required|numeric',
-
-
         ]);
 
         $fileController = new FileController;
@@ -32,9 +38,17 @@ class MaintenanceRequestController extends Controller
                 'category'=>$request->category,
                 'image' => $image_path,
                 'contact_number' => $request->contact_number,
-
             ]
         );
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @mixin Eloquent
+     * @return \Illuminate\Http\Response
+     */
+    public function index(){
+        return MaintenanceRequest::all();
     }
 
 }

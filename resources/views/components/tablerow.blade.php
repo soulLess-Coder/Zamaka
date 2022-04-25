@@ -10,23 +10,24 @@
             </div>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
-            <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">PID-1234 542</p>
+            <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">
+                {{$title}}</p>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
             <div class="flex items-center justify-center w-20 h-6 bg-blue-100 rounded-md ">
-                <span role="button" class="text-xs font-normal text-blue-700">Images</span>
+                <span role="button" class="text-xs font-normal text-blue-700"> {{$description}}</span>
             </div>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
             <div class="flex items-center justify-center w-20 h-6 bg-blue-100 rounded-md">
-                <span class="text-xs font-normal text-blue-700">Occupied</span>
+                <span class="text-xs font-normal text-blue-700">{{$catagory}}</span>
             </div>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
             <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">h@12 st34, Chamanabad, dhoke sydean road rawalpindi</p>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
-            <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">28/10/2020</p>
+            <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">{{$contact_number}}</p>
         </td>
         <td class="w-32 pl-4 whitespace-no-wrap">
             <p class="text-xs font-normal leading-4 tracking-normal text-left text-gray-800 dark:text-gray-100">8 marla</p>
@@ -60,39 +61,7 @@
                     </li>
                 </ul>
                 <div class="w-full bg-white border-l border-gray-300 dark:bg-gray-800">
-                    <h4 class="w-full py-3 pl-10 text-sm text-gray-800 bg-gray-100 dark:text-gray-100 dark:bg-gray-700">Property Details</h4>
-                    <div class="px-8 py-6 bg-white dark:bg-gray-800">
-                        <div class="flex items-start">
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Name</p>
-                                <h5 class="text-xs font-normal text-gray-800 dark:text-gray-100">Mahad</h5>
-                            </div>
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">CNIC</p>
-                                <h5 class="text-xs font-normal text-gray-800 dark:text-gray-100">3564-5584428-5</h5>
-                            </div>
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Duration</p>
-                                <h5 class="text-xs font-normal text-gray-800 dark:text-gray-100">6 monmths</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-start mt-6">
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Basic Necessity</p>
-                                <h5 class="text-xs font-normal text-gray-800 dark:text-gray-100"> <li>Electircity</li><li>Phone/Internet</li> <li>Gas</li><li>Water Supply</li>    </h5>
-                            </div>
-
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Agent</p>
-                                <h5 class="text-xs font-normal text-indigo-700">Usman </h5>
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Owner</p>
-                                <h5 class="text-xs font-normal text-indigo-700">Salman </h5>
-                            </div>
-                            <div class="w-1/3">
-                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">Images</p>
-                                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/tasks-svg5.svg" alt="paper clip">
-
-                            </div>
+                    <img>
                         </div>
                         <hr class="w-full my-6 border-t border-gray-300" />
                         <h5 class="mb-2 text-xs font-bold text-gray-600 dark:text-gray-400">Details</h5>
