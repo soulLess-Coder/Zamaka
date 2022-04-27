@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Address;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ListingController;
-use App\Http\Controllers\MaintenanceReportController;
+use App\Http\Controllers\MaintenanceRequestController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,8 +34,8 @@ Route::post('/auth/register', [AuthController::class, 'register']);
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
 Route::middleware('auth')->post('/listings', [ListingController::class, 'store']);
 
-Route::middleware('auth')->post('/MaintenanceRequest', [MaintenanceReportController::class, 'store']);
-Route::middleware('auth')->get('/MaintenanceRequest', [MaintenanceReportController::class, 'index']);
+Route::middleware('auth')->post('/MaintenanceRequest', [MaintenanceRequestController::class, 'store']);
+Route::middleware('auth')->get('/MaintenanceRequest', [MaintenanceRequestController::class, 'index']);
 Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
