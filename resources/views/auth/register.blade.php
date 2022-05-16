@@ -12,7 +12,7 @@
         <div class="w-auto row-span-6 p-5 sm:bg-white h-72">
             <img src="./images/signup.png" />
         </div>
-        <form method="post" action="{{route('register')}}">
+        <form method="post" action="LoginController">
             @csrf
             <div class="" >
                 <div class="justify-center pt-6">
