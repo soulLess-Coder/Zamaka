@@ -2,21 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\FileController;
 use App\Models\MaintenanceReport;
-use Illuminate\Http\Request;
 use App\Models\MaintenanceRequest;
-
+use Illuminate\Http\Request;
 
 class MaintenanceRequestController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        MaintenanceRequest::all();
+    }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-     * @noinspection PhpUndefinedMethodInspection
      */
     public function store(Request $request)
     {
@@ -32,7 +38,7 @@ class MaintenanceRequestController extends Controller
         $fileController = new FileController;
         $image_path = $fileController->storeMaintenanceImages($request);
 
-        return MaintenanceReport::create([
+        return MaintenanceRequest::create([
                 'title' => $request->title,
                 'description' => $request->description,
                 'category'=>$request->category,
@@ -41,14 +47,37 @@ class MaintenanceRequestController extends Controller
             ]
         );
     }
-
     /**
-     * Display a listing of the resource.
-     * @mixin Eloquent
+     * Display the specified resource.
+     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        return MaintenanceRequest::all();
+    public function show($id)
+    {
+        //
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
 }

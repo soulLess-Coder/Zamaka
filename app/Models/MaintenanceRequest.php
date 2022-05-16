@@ -13,8 +13,7 @@ class MaintenanceRequest extends Model
         'description',
         'category',
         'image',
-        'video',
-
+        'contact_number',
     ];
 
     //TODO: remove this when we integrate things
