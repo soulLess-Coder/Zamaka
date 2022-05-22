@@ -26,11 +26,10 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
 
-        if(! $token = auth()->claims(['role' => $request->only('role')])->attempt($request->only('email', 'password'))){
+        if(!$token = auth()->attempt($request->only('email', 'password', 'role'))){
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-        $flag ="I am here";
-        dd($flag);
+
         return $this->createNewToken($token);
     }
 

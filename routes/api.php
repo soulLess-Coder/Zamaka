@@ -27,8 +27,8 @@ Route::group([
     Route::get('/user-profile/{id}', [AuthController::class, 'userProfile']);
 });
 
-Route::post('/auth/login', [AuthController::class, 'login']);
-Route::post('/auth/register', [AuthController::class, 'register']);
+Route::post('/auth/login', [AuthController::class, 'login'])->name('login');
+Route::post('/auth/register', [AuthController::class, 'register'])->name('register');
 
 //TODO: Protect this with later with Auth
 Route::get('/listings', [ListingController::class, 'index'])->name('listings');
