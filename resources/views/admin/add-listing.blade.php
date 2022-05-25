@@ -12,7 +12,7 @@
         <div class="mb-4">
             <p class="p-2 font-bold"> House no</p>
             <label for="house_number" class="sr-only">House number</label>
-            <input type="text" name="house_number" id="house_number" placeholder="Your House Number" class="bg-gray-100 border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input type="text" name="house_number" id="house_number" placeholder="Your House Number" class=" border-black rounded-md border-2 w-full h-10 p-4
         @error('house_number') border-red-500 @enderror" value="{{ old('house_number') }}">
 
             @error('house_number')
@@ -26,7 +26,7 @@
             <p class="p-2 font-bold"> Street</p>
             <label for="street" class="sr-only">Street</label>
             <input type="text" name="street" id="street" placeholder="Your Street number"
-                   class="hover:bg-gray-100 border-red-500 border-2 w-full h-10 p-4 rounded-full @error('street') border-red-500 @enderror"
+                   class="border-black rounded-md border-2 w-full h-10 p-4 @error('street') border-red-500 @enderror"
                    value="{{ old('street ') }}">
 
             @error('street')
@@ -41,7 +41,7 @@
             <p class="p-2 font-bold"> Sector/Mohala</p>
             <label for="sector" class="sr-only">Area</label>
             <input type="text" name="sector" id="sector" placeholder="Sector/Mohala"
-                   class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('sector') border-red-500 @enderror"
+                   class="  border-black rounded-md border-2 w-full h-10 p-4  @error('sector') border-red-500 @enderror"
                    value="{{ old('sector') }}">
 
             @error('sector')
@@ -56,7 +56,7 @@
             <p class="p-2 font-bold"> Landmarks</p>
             <label for="landmark" class="sr-only">Area</label>
             <input type="text" name="landmark" id="landmark" placeholder="Area"
-                   class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('landmark') border-red-500 @enderror"
+                   class=" border-black rounded-md border-2 w-full h-10 p-4 @error('landmark') border-red-500 @enderror"
                    value="{{ old('landmark') }}">
 
             @error('landmark')
@@ -71,7 +71,7 @@
             <p class="p-2 font-bold"> City</p>
             <label for="city" class="sr-only">City </label>
             <select type="text" name="city" id="city" placeholder="Your City"
-                    class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('city') border-red-500 @enderror"
+                    class="border-black rounded-md border-2 w-full h-10 p-4  @error('city') border-red-500 @enderror"
                     value="{{ old('city ') }}">
                 <option>Rawalpindi</option>
                 <option>Islamabad</option>
@@ -87,7 +87,7 @@
 
         <div class="mb-4 ">
             <p class="p-2 font-bold">Owner CNIC</p>
-            <input name="owner_cnic" id="owner_cnic" placeholder="36547-XXXXXXX-X" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="owner_cnic" id="owner_cnic" placeholder="36547-XXXXXXX-X" class="  border-black rounded-md  border-2 w-full h-10 p-4
         @error('owner_cnic') border-red-500 @enderror">
 
             @error('owner_cnic')
@@ -99,7 +99,7 @@
         <div class="mb-4 ">
             <p class="p-2 font-bold"> Address</p>
 
-            <input name="address" id="address" placeholder="Your Address" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="address" id="address" placeholder="Your Address" class="  border-black rounded-md border-2 w-full h-10 p-4
         @error('Address') border-red-500 @enderror" value="{{ old('Address') }}">
 
             @error('address')
@@ -113,7 +113,7 @@
             <p class="p-2 font-bold"> Description</p>
             <label for="description" class="sr-only">Description of the Property</label>
             <input type="text" name="description" id="description" placeholder="Description"
-                   class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('description') border-red-500 @enderror"
+                   class="border-black rounded-md border-2 w-full h-10 p-4  @error('description') border-red-500 @enderror"
                    value="{{ old('description ') }}">
 
             @error('description')
@@ -126,7 +126,7 @@
         <div class="mb-4">
             <p class="p-2 font-bold">Category</p>
             <select type="text" name="category" id="category" placeholder="Type"
-                    class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full @error('category') border-red-500 @enderror"
+                    class="  border-black rounded-md border-2 w-full h-10 p-4  @error('category') border-red-500 @enderror"
                     value="{{ old('category') }}">
                 <option>Agriculture</option>
                 <option>Industrial</option>
@@ -180,7 +180,7 @@
         <div class="mb-4">
             <p class="p-2 font-bold"> House Area</p>
 
-            <input name="property_size" id="property_size" placeholder="House No" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="property_size" id="property_size" placeholder="House No" class="  border-black rounded-md border-2 w-full h-10 p-4
             @error('property_size') border-red-500 @enderror" value="{{ old('property_size') }}">
 
             @error('property_size')
@@ -193,7 +193,7 @@
         <div class="mb-4">
             <p class="p-2 font-bold"> Bath Room</p>
 
-            <input name="Bath Rooom" id="Bathroom" placeholder="Bath room" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="Bath Rooom" id="Bathroom" placeholder="Bath room" class="  border-black rounded-md border-2 w-full h-10 p-4
             @error('Address') border-red-500 @enderror" value="{{ old('Bath Room') }}">
 
             @error('Bath Room')
@@ -205,7 +205,7 @@
         <div class="mb-4">
             <p class="p-2 font-bold"> Bed Room</p>
 
-            <input name="Bed Rooom" id="Bedroom" placeholder="Bed room" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="Bed Rooom" id="Bedroom" placeholder="Bed room" class=" border-black rounded-md border-2 w-full h-10 p-4
             @error('Address') border-red-500 @enderror" value="{{ old('Bed Room') }}">
 
             @error('Bed Room')
@@ -218,7 +218,7 @@
         <div class="mb-4">
             <p for="build_year" class="p-2 font-bold"> Year Built</p>
 
-            <input name="build_year" id="build_year" placeholder="Build year" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <input name="build_year" id="build_year" placeholder="Build year" class="  border-black rounded-md border-2 w-full h-10 p-4
             @error('build_year') border-red-500 @enderror" value="{{ old('build_year') }}">
 
             @error('build_year')
@@ -228,11 +228,10 @@
             @enderror
         </div>
 
-
         <div class="mb-4 lg:col-span-2">
 
             <span class="inline-grid "><p class="p-2 font-bold"> Price</p></span>
-            <span class="inline-grid "><input name="lease_price" id="lease_price" placeholder="Price" class="hover:bg-gray-100  border-red-500 border-2 w-full h-10 p-4 rounded-full
+            <span class="inline-grid "><input name="lease_price" id="lease_price" placeholder="Price" class=" border-black rounded-md border-2 w-full h-10 p-4
                          @error('lease_price') border-red-500 @enderror" value="{{ old('lease_price') }}">
                         @error('lease_price')
                         <div class="mt-2 text-sm text-red-500">
@@ -244,14 +243,14 @@
 
             <div class="mb-4">
                 <p class="p-2 font-bold"> Add photos</p>
-                <label for="image">Select a file:</label>
-                <input type="file" id="image" name="image">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="image">Select a file:</label>
+                <input class="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" type="file" id="image" name="image">
             </div>
 
             <div class="mb-4">
                 <p class="p-2 font-bold"> Add Videos</p>
-                <label for="video">Select a file:</label>
-                <input type="file" id="video" name="video">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="video">Select a file:</label>
+                <input class="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" type="file" id="video" name="video">
             </div>
         </div>
 
