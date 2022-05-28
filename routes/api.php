@@ -7,6 +7,7 @@ use App\Models\Address;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\MaintenanceRequestController;
+use App\Http\Controllers\tenancy_agreements;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -40,3 +41,4 @@ Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post("tenent_info", [tenancy_agreements::class,'tenent_info']);

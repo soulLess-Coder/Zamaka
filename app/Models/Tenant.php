@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Tenant extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'cnic',
+        'image',
+        'contact_number',
+    ];
+
+      //TODO: remove this when we integrate things
+      protected $attributes = [
+        'user_id' => 1,
+    ];
 }

@@ -28,11 +28,14 @@ class LoginController extends Controller
                'email' => $request->email,
                'password' => $request->password,
         ]);
+
         $response = app()->handle($r);
         $user = $response->getContent();
         $code = $response->getStatusCode();
         //$role = Request::parseHeader($request, 'role');
+
         dd($user);
+
         if($code == 200){
             switch ($role){
                 case 'user':
