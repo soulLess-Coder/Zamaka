@@ -61,11 +61,7 @@ class User extends Authenticatable implements JWTSubject, Authorizable
     public function getJWTCustomClaims() {
         return [
             'role' => [
-                'admin',
                 'user',
-                'tenant',
-                'owner',
-                'agent'
             ],
         ];
     }

@@ -11,7 +11,7 @@ use App\Http\Controllers\resetController;
 use App\Http\Controllers\PropertyDetailsController;
 use App\Http\Controllers\View\DisplayListingsController;
 use App\Http\Controllers\View\DisplayMaintanceRequest;
-use App\Http\Controllers\View\LoginController;
+
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -26,10 +26,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/register', [AuthController::class, 'store'])->name('register');;
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+
 
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 

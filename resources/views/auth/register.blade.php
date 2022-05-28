@@ -12,9 +12,9 @@
         <div class="w-auto row-span-6 p-5 sm:bg-white h-72">
             <img src="./images/signup.png" />
         </div>
-        <form method="post" action="LoginController">
+        <form method="post" action="{{route('register')}}">
             @csrf
-            <div class="" >
+            <div class="">
                 <div class="justify-center pt-6">
                     <label for="name" class="justify-center order-4 font-bold sm:flex">Full Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Full Name" class="w-1/2 h-5 p-4 mt-2 ml-10 text-gray-900 transform border-2 rounded-lg shadow-md  bg-neutral-400 hover:translate-x-1 hover:border-gray-100" />

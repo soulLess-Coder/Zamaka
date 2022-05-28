@@ -2,11 +2,9 @@
 @extends('layouts.app')
 
 @section('content')
-    @if (session('status'))
-        {{ session('status') }}
-    @endif
 
-<form method="post" action="{{route('login')}}">
+
+<form method="post" action="">
     @csrf
     <div class="items-center justify-center sm:flex sm:h-screen">
         <div class="grid grid-cols-1 m-10 sm:grid-cols-2 ">
@@ -50,4 +48,33 @@
         </div>
     </div>
 </form>
+
+    <script>
+        $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $(".btn-submit").click(function(e){
+
+        e.preventDefault();
+
+        var password = $("input[name=password]").val();
+        var email = $("input[name=email]").val();
+
+        $.ajax({
+        type:'POST',
+        url:"{{route('register')}}",
+        data:{email:email, password:password },
+            success:function(data){
+                alert(data.success);
+            }
+        }).done(function(data){
+            console.log(data);
+            $.cookie('token',data.token)
+        });
+
+        });
+    </script>
 @endsection
