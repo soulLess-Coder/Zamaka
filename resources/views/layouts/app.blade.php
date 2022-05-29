@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
+        <script type="module" src="{{ asset('node_modules/js-cookie/dist/js.cookie.mjs') }}"></script>
+        <script nomodule defer src="{{asset('node_modules/js-cookie/dist/js.cookie.js')}}"></script>
         <title>Zamaka</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--Fonts SEN from google fonts-->

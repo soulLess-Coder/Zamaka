@@ -50,6 +50,7 @@
 </form>
 
     <script>
+        import Cookies from 'js-cookie'
         $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -63,16 +64,28 @@
         var password = $("input[name=password]").val();
         var email = $("input[name=email]").val();
 
+        $.post("localhost:8000/api/auth/login",{
+                email:email, password:password
+            }).done(function(data){
+                $.cookie('token',data.token)
+                console.log(data);
+                Cookies.set('JWT-Token', 'data.token', { expires: 7 });
+            })
+
         $.ajax({
         type:'POST',
-        url:"{{route('register')}}",
-        data:{email:email, password:password },
+        url:"localhost:8000/api/auth/login",
+        data:{email:email, password:password},
             success:function(data){
                 alert(data.success);
+                console.log(data);
+                Cookies.set('JWT-Token', 'data.token', { expires: 7 });
+                $.cookie('token',data.token);
             }
         }).done(function(data){
             console.log(data);
-            $.cookie('token',data.token)
+            Cookies.set('JWT-Token', 'data.token', { expires: 7 });
+            $.cookie('JWT-Token',data.token)
         });
 
         });
