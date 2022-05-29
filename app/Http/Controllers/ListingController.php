@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class ListingController extends Controller
 {
+    //TODO: Add If(Request()->Ajax) and shift away from api
     /**
      * Display a listing of the resource.
      * @mixin Eloquent
@@ -40,7 +41,6 @@ class ListingController extends Controller
             'sector',
             'mohala',
             'city'=>'required'
-
         ]);
 
         return Property::create($request->all());

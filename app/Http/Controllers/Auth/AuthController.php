@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
+use App\Http\Requests\RegisterRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -20,13 +22,10 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function login(Request $request){
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+    public function login(LoginRequest $request){
+        $validatedData = $request->validated();
 
-        if(!$token = auth()->attempt($request->only('email', 'password', 'role'))){
+        if(!$token = auth()->attempt($validatedData->only('email', 'password'))){
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
@@ -38,20 +37,15 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function register(Request $request) {
+    public function register(RegisterRequest $request) {
         //validation
-        $this->validate($request, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255',
-            'password' => 'required|confirmed',
-            'role' => 'required'
-        ]);
+        $validatedData = $request->validated();
 
         $user= User::create([
-            'name' => $request->name,
-            'password' => Hash::make($request->password),
-            'email'=> $request->email,
-            'role' => $request->role,
+            'name' => $validatedData->name,
+            'password' => Hash::make($validatedData->password),
+            'email'=> $validatedData->email,
+            'role' => $validatedData->role,
         ]);
 
         return response()->json([
