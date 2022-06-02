@@ -22,7 +22,7 @@
 
        <div>
         <label class="justify-center p-2 sm:flex">Details</label>
-        <input type="text" id="Street" placeholder="" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 shadow-lg resize r hover:translate-x-1 hover:border-gray-100" />
+        <input type="text" id="Street" placeholder="" class="flex justify-center w-full h-1 p-4 transform bg-gray-200 border-2 rounded-full shadow-lg hover:translate-x-1 hover:border-gray-100" />
       </div>
 
       <div>
