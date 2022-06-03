@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TenancyApplicationRequest;
+use App\Models\TenancyApplication;
 use Illuminate\Http\Request;
 
 class TenancyApplicationController extends Controller
@@ -10,11 +11,13 @@ class TenancyApplicationController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     *
      */
     public function index()
     {
-        return view();
+        //TODO: remove all() later, maybe pagination?
+        $applications = TenancyApplication::all();
+        return view('admin.tenancyApplicationApproval', $applications);
     }
 
     /**
@@ -24,7 +27,7 @@ class TenancyApplicationController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.apply-for-tenancy');
     }
 
     /**

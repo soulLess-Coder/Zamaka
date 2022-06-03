@@ -13,7 +13,7 @@ class TenancyApplicationRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class TenancyApplicationRequest extends FormRequest
     {
         return [
             'cnic' => 'required',
-            'image' => 'required|image',
+            'cnic_image' => 'required|image',
             'contact_number' => 'required'
         ];
     }

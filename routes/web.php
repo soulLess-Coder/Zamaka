@@ -6,6 +6,7 @@ use App\Http\Controllers\ComparisionController;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\TenancyApplicationController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\resetController;
 use App\Http\Controllers\PropertyDetailsController;
@@ -35,6 +36,11 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
+
+Route::get('/admin/approval/applications', function () {
+    return view('admin.tenancyApplicationApproval');
+});
+Route::get('/user/tenancyApplication', [TenancyApplicationController::class, 'create']);
 
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 

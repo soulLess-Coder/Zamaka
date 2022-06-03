@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('pending_tenancy_applications', function (Blueprint $table) {
             $table->id();
+            $
             $table->timestamps();
         });
     }
